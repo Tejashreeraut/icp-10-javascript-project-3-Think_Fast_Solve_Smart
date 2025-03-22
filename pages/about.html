@@ -3,12 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about page</title>
+    <title>About Us - LearnHub</title>
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-    <h1>Welcome in About..!!</h1>
-    <script>
-        
-    </script>
+
+    <!-- Navigation -->
+    <nav>
+    <h1>LearnHub</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+</nav>
+
+<!-- About Section -->
+<section class="about">
+    <h2>About LearnHub</h2>
+    <p>LearnHub is an innovative online learning platform designed to empower students, professionals, and lifelong learners with high-quality educational content.</p>
+
+    <h3>🌟 Our Mission</h3>
+    <p>To provide accessible, engaging, and practical learning experiences for everyone, anywhere.</p>
+
+    <h3>📚 What We Offer</h3>
+    <ul>
+        <li>High-quality online courses</li>
+        <li>Live classes and webinars</li>
+        <li>Expert instructors</li>
+        <li>Certificates upon completion</li>
+        <li>Affordable learning plans</li>
+    </ul>
+
+    <!-- Course Stats -->
+    <div class="stats">
+        <div class="stat-box">
+            <h2 id="coursesCount">0</h2>
+            <p>Courses Available</p>
+        </div>
+        <div class="stat-box">
+            <h2 id="studentsCount">0</h2>
+            <p>Students Enrolled</p>
+        </div>
+        <div class="stat-box">
+            <h2 id="instructorsCount">0</h2>
+            <p>Expert Instructors</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 LearnHub. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Light/Dark Mode Toggle
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+
+    // Animate Stats on Scroll
+    const stats = document.querySelectorAll(".stat-box");
+    const options = { threshold: 0.5 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, options);
+
+    stats.forEach(stat => observer.observe(stat));
+
+    // Dynamic Number Counter
+    function animateCounter(element, target, speed) {
+        let count = 0;
+        let increment = target / speed;
+        let interval = setInterval(() => {
+            count += increment;
+            if (count >= target) {
+                count = target;
+                clearInterval(interval);
+            }
+            element.textContent = Math.floor(count);
+        }, 30);
+    }
+
+    // Start counting when the page loads
+    window.onload = function () {
+        setTimeout(() => {
+            animateCounter(document.getElementById("coursesCount"), 120, 50);
+            animateCounter(document.getElementById("studentsCount"), 5000, 60);
+            animateCounter(document.getElementById("instructorsCount"), 45, 50);
+        }, 500);
+    };
+</script>
+
 </body>
 </html>
