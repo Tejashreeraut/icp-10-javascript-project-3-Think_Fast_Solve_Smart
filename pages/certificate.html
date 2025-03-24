@@ -99,7 +99,7 @@
   <div class="form-container">
     <input type="text" id="name" placeholder="Enter Your Name">
     <input type="text" id="issueDate" placeholder="Enter Issue Date">
-    <input type="text" id="description" placeholder="Enter Description">
+   
     <button onclick="generateCertificate()">Generate Certificate</button>
   </div>
 
@@ -110,7 +110,7 @@
       <span><strong>Your Name:</strong> <span id="certName">[Your Name]</span></span>
       <span><strong>Issued by:</strong> Power BI</span>
       <span><strong>Date of Issue:</strong> <span id="certDate">[Date]</span></span>
-      <span><strong>Description:</strong> <span id="certDescription">[Description]</span></span>
+   
     </div>
     <div class="footer">
       <p>Software by <strong>r3sy</strong></p>
@@ -121,7 +121,7 @@
     function generateCertificate() {
       document.getElementById("certName").textContent = document.getElementById("name").value || "[Your Name]";
       document.getElementById("certDate").textContent = document.getElementById("issueDate").value || "[Date]";
-      document.getElementById("certDescription").textContent = document.getElementById("description").value || "[Description]";
+     
     }
   </script>
 
