@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>course</title>
+    <style>
+        .container {
+            height: 900px;
+            width: 1300px;
+            background-color: rgb(179, 97, 139);
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            height: 550px;
+            width: 350px;
+            background-color: rgb(213, 226, 233);
+            margin: 10px;
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 15px;
+            border: solid 2px white;
+            cursor: pointer;
+        }
+
+        .item img {
+            height: 200px;
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" onclick="showInfo('VERBAL ABILITY', 'English language skills,including reading comprehension,grammer,andvocabulary.')">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240729112821/Top-Verbal-Ability-Aptitude-Topics-for-Placements-copy.webp">
+            <p>🟢Verbal Ability...</p>
+        </div>
+        <div class="item" onclick="showInfo('Logical Reasoning', 'problem-Solving,Pattern recognition,and critical thinking skills.IT industry.')">
+            <img src="https://i.pinimg.com/736x/1c/0b/cb/1c0bcbade16be095351546e048bd6a54.jpg">
+            <p>🟠Logical Reasoning qustions...</p>
+            <p>🟠Abstract Reasoning...</p>
+            <p>🟠Data Sufficiency...</p>
+        </div>
+        <div class="item" onclick="showInfo('Quantitative Aptitude', 'Quantitative Aptitude is used to measure Aptitude tests assess cognitive abilities and problem-solving skills, often including questions on numerical reasoning, verbal reasoning, logical reasoning, abstract reasoning, and spatial reasoning.')">
+            <img src="https://play-lh.googleusercontent.com/8HEJdrLd48HwrAzlRva8xjG1wxCuu0VUd9ML6ySw76q-lBD0AeWofbNZqYPrjWSCgf8">
+            <p>🔴Quantitative Aptitude. </p>
+                <p>Fractions, Decimals, and Percentages: Operations and conversions involving these types of numbers. </p>
+               <p> Ratios and Proportions: Understanding and applying ratios and proportions in problem-solving...</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(city, info) {
+            alert(city + ": " + info);
+        }
+    </script>
+</body>
+</html>
+
+
+
