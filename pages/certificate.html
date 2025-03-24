@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate for Power BI Training</title>
+  <style>
+      </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <input type="text" id="issueDate" placeholder="Enter Issue Date">
+    <input type="text" id="description" placeholder="Enter Description">
+    <button onclick="generateCertificate()">Generate Certificate</button>
+  </div>
+
+  <div class="certificate">
+    <h1>Certificate of Completion</h1>
+    <h2>THIS IS PRESENTED TO</h2>
+    <div class="details">
+      <span><strong>Your Name:</strong> <span id="certName">[Your Name]</span></span>
+      <span><strong>Issued by:</strong> Power BI</span>
+      <span><strong>Date of Issue:</strong> <span id="certDate">[Date]</span></span>
+      <span><strong>Description:</strong> <span id="certDescription">[Description]</span></span>
+    </div>
+    <div class="footer">
+      <p>Software by <strong>r3sy</strong></p>
+    </div>
+  </div>
+
+  <script>
+    function generateCertificate() {
+      document.getElementById("certName").textContent = document.getElementById("name").value || "[Your Name]";
+      document.getElementById("certDate").textContent = document.getElementById("issueDate").value || "[Date]";
+      document.getElementById("certDescription").textContent = document.getElementById("description").value || "[Description]";
+    }
+  </script>
+
+</body>
+</html>
