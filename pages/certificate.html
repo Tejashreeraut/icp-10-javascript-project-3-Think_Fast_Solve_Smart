@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate for Power BI Training</title>
+  <style>  
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .certificate {
+    width: 90%;
+    max-width: 700px;
+    background: #ffffff;
+    border: 10px solid #021311;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .certificate h1 {
+    font-size: 2rem;
+    color: #264653;
+    margin-bottom: 10px;
+  }
+
+  .certificate h2 {
+    font-size: 1.5rem;
+    color: #e76f51;
+  }
+
+  .details {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  .details span {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .footer {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .footer p strong {
+    color: #2a9d8f;
+  }
+
+  .form-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-container input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-container button {
+    padding: 10px 15px;
+    background: #264653;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .form-container button:hover {
+    background: #2a9d8f;
+  }
+      </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <input type="text" id="issueDate" placeholder="Enter Issue Date">
+   
+    <button onclick="generateCertificate()">Generate Certificate</button>
+  </div>
+
+  <div class="certificate">
+    <h1>Certificate of Completion</h1>
+    <h2>THIS IS PRESENTED TO</h2>
+    <div class="details">
+      <span><strong>Your Name:</strong> <span id="certName">[Your Name]</span></span>
+      <span><strong>Issued by:</strong> Power BI</span>
+      <span><strong>Date of Issue:</strong> <span id="certDate">[Date]</span></span>
+   
+    </div>
+    <div class="footer">
+      <p>Software by <strong>r3sy</strong></p>
+    </div>
+  </div>
+
+  <script>
+    function generateCertificate() {
+      document.getElementById("certName").textContent = document.getElementById("name").value || "[Your Name]";
+      document.getElementById("certDate").textContent = document.getElementById("issueDate").value || "[Date]";
+     
+    }
+  </script>
+
+</body>
+</html>
