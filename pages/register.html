@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LearnHub</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+    <button id="themeToggle">🌙</button>
+
+    <div class="container">
+        <h2>Register on LearnHub</h2>
+
+        <div class="input-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+        </div>
+
+        <button onclick="register()">Register</button>
+
+        <div class="links">
+            <p>Already have an account? <a href="../pages/login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Light/Dark Mode Toggle
+        const themeToggle = document.getElementById("themeToggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        });
+
+        // Show/Hide Password Toggle
+        function togglePassword() {
+            const passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+
+        // Register Function (Stores Data in LocalStorage)
+        function register() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // Validate inputs
+            if (!name || !email || !password) {
+                alert("Please fill in all fields!");
+                return;
+            }
+
+            // Check if user already exists
+            if (localStorage.getItem(email)) {
+                alert("Email already registered! Please use a different email.");
+                return;
+            }
+
+            // Store user data in LocalStorage
+            const userData = { name, email, password };
+            localStorage.setItem(email, JSON.stringify(userData));
+
+            alert("Registration Successful! You can now log in.");
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+
+</body>
+</html>

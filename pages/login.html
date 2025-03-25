@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LearnHub</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <button id="themeToggle">🌙</button>
+
+    <div class="container">
+        <h2>Login to LearnHub</h2>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+        </div>
+
+        <button onclick="login()">Login</button>
+
+        <div class="links">
+            <p><a href="#">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Light/Dark Mode Toggle
+        const themeToggle = document.getElementById("themeToggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        });
+
+        // Show/Hide Password Toggle
+        function togglePassword() {
+            const passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+
+        // Login Function (Uses LocalStorage)
+        function login() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // Retrieve stored user from LocalStorage
+            const storedUser = JSON.parse(localStorage.getItem(email));
+
+            if (storedUser && storedUser.password === password) {
+                alert("Login Successful!");
+                localStorage.setItem("loggedInUser", email); // Store session
+                window.location.href = "../index.html"; // Redirect to dashboard
+            } else {
+                alert("Invalid Email or Password!");
+            }
+        }
+
+        // Auto-Redirect if already logged in
+        window.onload = function () {
+            if (localStorage.getItem("loggedInUser")) {
+                window.location.href = "login.html";
+            }
+        };
+    </script>
+
+</body>
+</html>
