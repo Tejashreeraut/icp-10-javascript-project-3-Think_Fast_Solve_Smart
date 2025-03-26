@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Page</title>
     <style>
-
         /* Navbar */
 
         body {
@@ -72,7 +71,7 @@
             height: 20px;
         }
 
-        .themeToggle{
+        .themeToggle {
             margin-left: 40px;
             cursor: pointer;
             font-size: 30px;
@@ -86,14 +85,14 @@
 
 
         /* Footer*/
-        
+
         .footer-container {
             background-color: #0c1c3f;
             color: #fff;
             padding: 20px;
             display: flex;
             flex-direction: row;
-            justify-content:center;
+            justify-content: center;
             flex-wrap: wrap;
             width: 1300px;
         }
@@ -121,11 +120,11 @@
             padding-left: 15px;
         }
 
-        .footer-logo-container{
+        .footer-logo-container {
             display: flex;
         }
 
-        .footer-sub-logo-container{
+        .footer-sub-logo-container {
             width: 25px;
             height: 25px;
             padding: 5px;
@@ -139,33 +138,36 @@
 
         }
 
-        .footer-Quick-links{
+        .footer-Quick-links {
             width: 200px;
             margin-left: 30px;
         }
 
-        .footer-courses{
+        .footer-courses {
             margin-left: 10px;
             text-decoration: none;
             color: #fff;
             cursor: pointer;
         }
 
-        .footer-Learn{
+        .footer-Learn {
             width: 250px;
         }
 
-        .footer-icon{
+        .footer-icon {
             height: 20px;
             padding: 3px;
         }
-        .footer-location-container{
+
+        .footer-location-container {
             display: flex;
         }
-        .footer-Contact-Us{
+
+        .footer-Contact-Us {
             width: 320px;
         }
-        .footer-location{
+
+        .footer-location {
             margin: 2px;
             font-size: 17px;
         }
@@ -177,7 +179,131 @@
 
         /* Media Query For Small Device */
         @media (max-width: 450px) {
-            
+
+            /* Navbar */
+
+            .navbar {
+                height: 45px;
+                padding: 3px;
+            }
+
+            .brand-icon {
+                height: 40px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .themeToggle {
+                margin-left: 45px;
+                font-size: 25px;
+            }
+
+            .hamburger-menu {
+                margin-left: 27px;
+                display: flex;
+                align-items: center;
+
+            }
+            .hamburger-menu-img{
+                height: 30px;
+            }
+
+
+            /* Footer*/
+
+            .footer-container {
+                background-color: #0c1c3f;
+                color: #fff;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 1300px;
+            }
+
+            .footer-sub-container {
+                width: 380px;
+            }
+
+            .footer-logo {
+                padding: 5px;
+                padding-right: 10px;
+            }
+
+            .RTC {
+                display: flex;
+                align-items: center;
+            }
+
+            .footer-heading {
+                height: 20px;
+            }
+
+            .footer-sub-heading {
+                font-size: 15px;
+                padding-left: 15px;
+            }
+
+            .footer-logo-container {
+                display: flex;
+            }
+
+            .footer-sub-logo-container {
+                width: 25px;
+                height: 25px;
+                padding: 5px;
+                background-color: #fff;
+                border-radius: 50px;
+                margin: 10px;
+            }
+
+            .footer-sub-logo {
+                height: 25px;
+
+            }
+
+            .footer-Quick-links {
+                width: 200px;
+                margin-left: 30px;
+            }
+
+            .footer-courses {
+                margin-left: 10px;
+                text-decoration: none;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .footer-Learn {
+                width: 250px;
+            }
+
+            .footer-icon {
+                height: 20px;
+                padding: 3px;
+            }
+
+            .footer-location-container {
+                display: flex;
+            }
+
+            .footer-Contact-Us {
+                width: 320px;
+            }
+
+            .footer-location {
+                margin: 2px;
+                font-size: 17px;
+            }
+
+
         }
     </style>
 </head>
@@ -205,7 +331,7 @@
         <div id="themeToggle" class="themeToggle">🌙</div>
 
         <div class="hamburger-menu">
-            <img src="menu.png" alt="hamburger-menu" class="menu-img">
+            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
         </div>
     </div>
 
@@ -247,42 +373,44 @@
                 <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
                 <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
             </div>
-            <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+ students.</P>
+            <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+                and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+                students.</P>
 
             <div class="footer-logo-container">
                 <div class="footer-sub-logo-container">
                     <a href="#">
-                    <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                        <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
                     </a>
                 </div>
 
                 <div class="footer-sub-logo-container">
                     <a href="https://www.linkedin.com/in/nalinee-bodke-632134294/">
-                    <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                        <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
                     </a>
                 </div>
 
                 <div class="footer-sub-logo-container">
                     <a href="https://github.com/nalineebodke10">
-                    <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                        <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
                     </a>
                 </div>
 
                 <div class="footer-sub-logo-container">
                     <a href="https://www.youtube.com/">
-                    <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                        <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
                     </a>
                 </div>
 
                 <div class="footer-sub-logo-container">
                     <a href="#">
-                    <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                        <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
                     </a>
                 </div>
 
                 <div class="footer-sub-logo-container">
                     <a href="#">
-                    <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                        <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
                     </a>
                 </div>
             </div>
@@ -309,14 +437,15 @@
             <h3>Contact Us</h3>
             <div class="footer-location-container">
                 <img src="./../icon/location.svg" alt="location" class="footer-icon">
-                <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Shewalewadi(Hadapsar), Pune - 412307</p>
+                <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                    Shewalewadi(Hadapsar), Pune - 412307</p>
             </div>
 
             <div class="footer-location-container">
                 <img src="./../icon/phone..svg" alt="location" class="footer-icon">
                 <p class="footer-location">+91-8767202017</p>
             </div>
-            
+
             <div class="footer-location-container">
                 <img src="./../icon/email.svg" alt="location" class="footer-icon">
                 <p class="footer-location">nalineebodke1007@gmail.com</p>
