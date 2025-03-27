@@ -1,0 +1,155 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(239, 239, 239);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    background-color:#c62828;
+    color: rgb(223, 211, 211);
+    text-align: center;
+    padding: 24px 0;
+}
+h1{
+    margin: 0;
+    font-size: 32px;
+    background-color: yellow;
+}
+p{
+    font-size: 17px;
+    margin-top: 8px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 32px;
+}
+.contact-info{
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 24px;
+    margin: 16px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+.contact-info:hover
+{
+    background-color: rgb(226, 224, 225);
+
+}
+
+ .contact-info h2{
+    color: #c62828;
+ }
+.contact-info p{
+    margin: 8px 0;
+
+}
+
+
+.contact-form button:hover{
+    background-color:#c62828
+}
+
+
+
+
+
+
+
+.footer{
+    background-color:black;
+    height:600px;
+    width:2020px;
+    padding-right: 80px;
+    
+    }
+    .imgf
+    {
+        height:100px;
+        width: 300px;
+    }
+    .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+    }
+    
+    .footer .box-container .box h3{
+    font-size: 2.2rem;
+    color:orange;
+    padding: 1rem 0;
+    }
+    .footer .box-container #social-media h3{
+    font-size: 2.2rem;
+    color:orange;
+    padding: 1rem 0;
+    }
+    
+    .footer .box-container .box p
+    {
+    font-size: 1.5rem;
+    color:white;
+    padding: 1rem 0;
+    line-height: 2;
+    }
+    
+    .footer .box-container .box a
+    {
+    display: block;
+    font-size: 1.4rem;
+    color:white;
+    padding: 1rem 0;
+    text-decoration: none;
+    }
+    .footer .box-container #social-media a{
+    
+    margin-right: 10px;
+    margin-top: 80px;
+    border-radius: 50%;
+    }
+    .footer .box-container #social-media img:hover{
+    height: 50px;
+    background-color:#ee931c;
+    border-radius: 50%;
+    padding: 3px;
+    }
+    
+    .footer .box-container .box a:hover{
+    color:orange;
+    }
+    
+    .footer .box-container .box a i{
+    padding-right: .5rem;
+    color:orange;
+    }
+    
+    .footer .credit{
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+    }
+    
+    .footer .credit span{
+    color:orange;
+    }
+    .footer .box-container #social-media{
+    display:inline-block;
+    
+    }
+    #text {
+    margin-top: 0%;
+    color:#ff3399;
+    font-family:rutu;
+    font-size: 40px;
+    margin-left:20px;
+    }

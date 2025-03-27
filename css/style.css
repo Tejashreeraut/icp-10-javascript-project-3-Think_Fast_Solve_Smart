@@ -32,6 +32,10 @@ align-items: center;
 position: relative;
 margin-top:0px;
 }
+.content
+{
+    padding-right: 30px;
+}
 .home .content
 {
 flex: 1 1 40rem;
@@ -129,9 +133,14 @@ line-height: 2;
 background-color:black;
 height:600px;
 width:2020px;
+padding-right: 80px;
 
 }
-
+.imgf
+{
+    height:100px;
+    width: 300px;
+}
 .footer .box-container{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
@@ -210,4 +219,14 @@ color:#ff3399;
 font-family:rutu;
 font-size: 40px;
 margin-left:20px;
+}
+.box
+{
+    color: white;
+    font-size:30px;
+    margin-top: 116px;
+}
+.box1
+{
+    margin-top :116px; 
 }
