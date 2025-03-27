@@ -12,59 +12,92 @@
             <img src="./../icon/virtual-class.png" alt="icon" class="brand-icon">
             <h2 class="brand-heading">LearnHub</h2>
         </div>
-
         <div class="menu">
             <a href="../index.html" class="menu-item">Home</a>
             <a href="../pages/about.html" class="menu-item">About Us</a>
-            <a href="../pages/courses.html " class="menu-item">Courses</a>
+            <a href="../pages/courses.html" class="menu-item">Courses</a>
             <a href="../pages/mock_test.html" class="menu-item">Mock Test</a>
             <a href="../pages/contact.html" class="menu-item">Contact</a>
-            <a href="../pages/login.html" class="menu-item">login</a>
+            <a href="../pages/login.html" class="menu-item">Login</a>
         </div>
-
         <div class="search">
             <input class="input-search" placeholder="search..." />
         </div>
-
         <div id="themeToggle" class="themeToggle">🌙</div>
+    </div>
 
-        <div class="hamburger-menu">
-            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
+    <div class="top_content">
+        <h1 id="head">About Us</h1>
+
+        <p id="welcome">Welcome to LearnHub</p>
+
+        <p id="para">LearnHub is an innovative online learning platform designed to empower students,
+             professionals, and lifelong learners with high-quality educational content.
+             We believe in making education accessible and affordable for everyone, regardless of their background or location.
+             With industry-leading instructors and interactive learning modules, LearnHub ensures a rich learning experience.
+             Join thousands of learners who are upgrading their skills and advancing their careers with LearnHub.
+            </p>
+    </div>
+
+    <div class="content">
+        <img src="../image/about-whoare.jpg" alt="img" id="team-img">
+        <div class="who">
+            <b>Who We Are</b>
+            <p>At LearnHub, we are passionate about helping students, job seekers, 
+                and professionals master aptitude skills through high-quality courses and mock tests.
+                 Our platform is designed to make aptitude learning simple, engaging, and effective, 
+                 empowering individuals to excel in competitive exams, job interviews, and academic assessments.</p>
+            <!-- <button id="btn-learn">Learn More</button> -->
         </div>
     </div>
-<section class="about">
-    <h2>About LearnHub</h2>
-    <p>LearnHub is an innovative online learning platform designed to empower students, professionals, and lifelong learners with high-quality educational content.</p>
 
-    <h3>🌟 Our Mission</h3>
-    <p>To provide accessible, engaging, and practical learning experiences for everyone, anywhere.</p>
-
-    <h3>📚 What We Offer</h3>
-    <ul>
-        <li>High-quality online courses</li>
-        <li>Live classes and webinars</li>
-        <li>Expert instructors</li>
-        <li>Certificates upon completion</li>
-        <li>Affordable learning plans</li>
-    </ul>
-
-    <div class="stats">
-        <div class="stat-box">
-            <h2 id="coursesCount">0</h2>
-            <p>Courses Available</p>
+    <div class="ourmission">
+        <div class="mission-content">
+            <b>Our Vision</b>
+            <p>At LearnHub, our vision is to empower learners with high-quality aptitude training that enhances their problem-solving skills, 
+                logical thinking, and career prospects.Our ultimate goal is to be the leading platform for aptitude preparation,
+                 ensuring that every learner gains confidence and success in their journey. 🚀</p>
         </div>
-        <div class="stat-box">
-            <h2 id="studentsCount">0</h2>
-            <p>Students Enrolled</p>
-        </div>
-        <div class="stat-box">
-            <h2 id="instructorsCount">0</h2>
-            <p>Expert Instructors</p>
+        <div class="miss-img">
+            <img src="../image/about-mission.jpg" alt="img" id="mission-img">
         </div>
     </div>
-</section>
 
-  <!--Footer-->
+    <div class="offer">
+        <h1>what we offer</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3> High-Quality Courses</h3>
+                <p>Our high-quality courses are designed to provide a comprehensive and structured learning experience for students, 
+                    job seekers, and professionals. </p>
+            </div>
+            <div class="card">
+                <h3>Mock Tests & Practice Quizzes</h3>
+                <p>Our Mock Tests & Practice Quizzes are designed to simulate real exam conditions, helping learners improve their speed,
+                     accuracy, and confidence. </p>
+            </div>
+            <div class="card">
+                <h3>Certificates & Recognition</h3>
+                <p> Upon successful course completion, learners receive industry-recognized certificates that showcase their
+                    expertise in Quantitative Aptitude, Logical Reasoning, and Verbal Ability.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-quote">
+        <div class="card-quote">
+            <h3 class="h3-quote">💡 Quote of the Day</h3>
+            <p id="quote">Loading...</p>
+        </div>
+    
+        <div class="card-quote">
+            <h3 class="h3-quote" >📢 Testimonials</h3>
+            <p id="testimonial">"LearnHub changed my learning experience!"</p>
+        </div>
+    </section>
+
+     <!--Footer-->
   <div class="footer-container">
     <div class="footer-sub-container">
         <div class="RTC">
@@ -153,51 +186,60 @@
     </div>
 </div>
 
-  <script src="https://kit.fontawesome.com/42daa0a1cd.js" crossorigin="anonymous"></script>
-<script>
-   
-    const themeToggle = document.getElementById("themeToggle");
-    themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-    });
-
-    // Animate Stats on Scroll
-    const stats = document.querySelectorAll(".stat-box");
-    const options = { threshold: 0.5 };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+    <script>
+        // Theme Toggle
+        document.getElementById("themeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
         });
-    }, options);
 
-    stats.forEach(stat => observer.observe(stat));
+        // Dynamic Number Counter
+        function animateCounter(element, target, speed) {
+            let count = 0;
+            let interval = setInterval(() => {
+                count += Math.ceil(target / speed);
+                if (count >= target) {
+                    count = target;
+                    clearInterval(interval);
+                }
+                element.textContent = count;
+            }, 30);
+        }
 
-    // Dynamic Number Counter
-    function animateCounter(element, target, speed) {
-        let count = 0;
-        let increment = target / speed;
-        let interval = setInterval(() => {
-            count += increment;
-            if (count >= target) {
-                count = target;
-                clearInterval(interval);
-            }
-            element.textContent = Math.floor(count);
-        }, 30);
-    }
+        // Array of Quotes
+        const quotes = [
+            "The beautiful thing about learning is that no one can take it away from you.",
+            "Success is not the key to happiness. Happiness is the key to success.",
+            "Education is the most powerful weapon you can use to change the world.",
+            "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            "An investment in knowledge pays the best interest."
+        ];
 
-    // Start counting when the page loads
-    window.onload = function () {
+        document.getElementById("quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+
+        // Rotating Testimonials
+        const testimonials = [
+            "LearnHub changed my learning experience!",
+            "Excellent platform with amazing instructors!",
+            "I got my dream job thanks to LearnHub!",
+            "The courses are well-structured and easy to follow!"
+        ];
+        
+        let index = 0;
+        setInterval(() => {
+            document.getElementById("testimonial").textContent = testimonials[index];
+            index = (index + 1) % testimonials.length;
+        }, 5000);
+
+        // Ask user for feedback
         setTimeout(() => {
-            animateCounter(document.getElementById("coursesCount"), 120, 50);
-            animateCounter(document.getElementById("studentsCount"), 5000, 60);
-            animateCounter(document.getElementById("instructorsCount"), 45, 50);
-        }, 500);
-    };
-</script>
-
+            let feedback = confirm("Do you like LearnHub? Click OK to give us a 5-star rating!");
+            if (feedback) {
+                alert("Thank you for your support! 😊");
+            } else {
+                alert("We'll work harder to improve your experience! 🙌");
+            }
+        }, 10000);
+    </script>
 </body>
 </html>
