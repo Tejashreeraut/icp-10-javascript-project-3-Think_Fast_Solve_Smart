@@ -24,6 +24,8 @@
             align-content: center;
             position: sticky;
             top: 0;
+            z-index: 1000;
+            justify-content: space-between;
         }
 
         .brand {
@@ -45,7 +47,7 @@
         .menu {
             margin-left: 150px;
             width: 550px;
-            color: #070f58;
+            color: #111853;
             display: flex;
             justify-content: space-evenly;
             font-size: 19px;
@@ -54,9 +56,53 @@
 
         .menu-item {
             cursor: pointer;
+            text-decoration: none;
         }
 
         .menu-item:hover {
+            color: #99319c;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+           text-decoration: none;
+        }
+
+        .dropdown a i {
+            margin-left: 10px;
+            
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            text-decoration: none;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
             color: #911496;
         }
 
@@ -72,7 +118,7 @@
         }
 
         .themeToggle {
-            margin-left: 40px;
+            margin: 0%;
             cursor: pointer;
             font-size: 30px;
             display: flex;
@@ -89,12 +135,12 @@
         .footer-container {
             background-color: #0c1c3f;
             color: #fff;
-            padding: 20px;
+            padding: 5px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            width: 1300px;
+            width: 100%;
         }
 
         .footer-sub-container {
@@ -210,7 +256,8 @@
                 align-items: center;
 
             }
-            .hamburger-menu-img{
+
+            .hamburger-menu-img {
                 height: 30px;
             }
 
@@ -239,7 +286,7 @@
             }
 
             .footer-sub-logo-container {
-                
+
                 border-radius: 70px;
                 margin: 7px;
             }
@@ -279,12 +326,19 @@
         </div>
 
         <div class="menu">
-            <a class="menu-item">Home</a>
-            <a class="menu-item">About Us</a>
-            <a class="menu-item">Courses</a>
-            <a class="menu-item">Mock Test</a>
-            <a class="menu-item">Contact</a>
-            <a class="menu-item">login</a>
+            <a class="menu-item" href="#">Home</a>
+            <a class="menu-item" href="#">About Us</a>
+            <a class="menu-item" href="#">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="pages/educational-quizz.html">Quantitative Aptitude</a>
+                    <a href="pages/fun-quizz.html">Logical Ability</a>
+                    <a href="pages/gk-quizz.html">Verble Ability</a>
+                </div>
+            </div>
+            <a class="menu-item" href="#">Contact</a>
+            <a class="menu-item" href="#">login</a>
         </div>
 
         <div class="search">
