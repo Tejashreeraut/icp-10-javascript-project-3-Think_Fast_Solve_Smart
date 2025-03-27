@@ -1,0 +1,143 @@
+
+.footer-container {
+    background-color: #0c1c3f;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-sub-container {
+    width: 380px;
+}
+
+.footer-logo {
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.RTC {
+    display: flex;
+    align-items: center;
+}
+
+.footer-heading {
+    height: 20px;
+}
+
+.footer-sub-heading {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.footer-logo-container {
+    display: flex;
+}
+
+.footer-sub-logo-container {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.footer-sub-logo {
+    height: 25px;
+
+}
+
+.footer-Quick-links {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.footer-courses {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-Learn {
+    width: 250px;
+}
+
+.footer-icon {
+    height: 20px;
+    padding: 3px;
+}
+
+.footer-location-container {
+    display: flex;
+}
+
+.footer-Contact-Us {
+    width: 320px;
+}
+
+.footer-location {
+    margin: 2px;
+    font-size: 17px;
+}
+
+
+
+/* Media Query For Small Device */
+@media (max-width: 450px) {
+
+    .footer-container {
+        padding: 12px;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .footer-sub-container {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .footer-logo {
+        padding: 5px;
+        padding-right: 5px;
+    }
+
+    .footer-sub-heading {
+        font-size: 13px;
+        padding-left: 9px;
+    }
+
+    .footer-sub-logo-container {
+
+        border-radius: 70px;
+        margin: 7px;
+    }
+
+    .footer-Quick-links {
+        display: none;
+    }
+
+    .footer-Learn {
+        display: none;
+    }
+
+    .footer-icon {
+        height: 20px;
+        padding: 3px;
+    }
+
+    .footer-Contact-Us {
+        width: 320px;
+    }
+
+    .footer-location {
+        margin: 2px;
+        font-size: 13px;
+    }
+
+
+}
