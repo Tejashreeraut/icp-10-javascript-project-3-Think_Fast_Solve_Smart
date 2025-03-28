@@ -6,6 +6,7 @@
 .content
 {
     padding-right: 30px;
+    margin-bottom: 0px;
 }
 .home .content
 {
@@ -44,6 +45,7 @@ filter: drop-shadow(10px 10px 30px #e28605);
     width: 1800px;
     padding:4px;
     padding-bottom: 0px;
+    margin-bottom: 10px;
     
 }
 .home .content p
