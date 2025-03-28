@@ -16,19 +16,21 @@ padding-top: 6.5rem;
 .home .content h3
 {
 font-size: 6rem;
-color: var(--black);
+color: #0C0950;
 }
 
 .home .content h3 span
 {
-color: var(--orange);
+color: #0C0950;
 filter: drop-shadow(10px 10px 30px #e28605);
 }
 .image
 {
     height:500px;
-    width: 500px;
+    width: 1800px;
     padding:4px;
+    padding-bottom: 0px;
+    
 }
 .home .content p
 {
@@ -46,14 +48,15 @@ padding-left:7px;
 
 }
 .btn{
-font-size: 1.7rem;
-margin-top: 1rem;
+font-size:26px;
+margin-top:5px;
 display: inline-block;
-padding: .8rem 3rem;
-border-radius: .5rem;
+padding:7px;
+margin: 8px;
+border-radius: 20px 10px 20px 10px;
 border:orange;
-color:orange;
-background: none;
+color:white;
+background: #0C0950;
 cursor: pointer;
 }
 .btn:hover{
@@ -94,13 +97,6 @@ line-height: 2;
 {
     height:500px;
     width:400px;
-}
-#text {
-margin-top: 0%;
-color:#ff3399;
-font-family:rutu;
-font-size: 40px;
-margin-left:20px;
 }
 .box
 {
@@ -147,12 +143,11 @@ margin-left:20px;
   
   .card {
     margin-top: 60px;
-    width:250px;
-    height: 320px;
+    width:350px;
+    height: 420px;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 120px;
     align-items: center;
@@ -187,3 +182,66 @@ margin-left:20px;
   .card-button:hover {
     background-color: #3e8e41;
   }
+
+
+  /*form */
+  .contact-form1{
+    background-color: rgb(239, 239, 239);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 24px;
+    margin: 16px;
+    width: 500px;
+    height: 510px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+.contact-form1 h2{
+    color:#c62828;
+    margin: 16px;
+    font-size: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+label{
+    margin-bottom: 10px;
+    
+}
+input[type=text]{
+    height: 18px;
+    width: 440px;
+    padding: 10px;
+    font-family: 15px;
+} 
+
+input[type=email]{
+height: 18px;
+width: 440px;
+padding: 10px;
+font-family: 15px;
+}
+input[type=tel]
+{
+height: 18px;
+width: 440px;
+padding: 10px;
+font-family: 15px;
+}
+input[type=submit]{
+    background-color: #c62828;
+    color: #fff;
+    border: none;
+    width: 465px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: #e0e0e0;
+}
+
+.contact-form1 button:hover
+{
+    background-color:#c62828
+}
