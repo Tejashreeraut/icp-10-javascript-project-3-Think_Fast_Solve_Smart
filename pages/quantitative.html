@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Reasoning Mock Test</title>
+    <link rel="stylesheet" href="./../css/navbar.css" />
+    <link rel="stylesheet" href="./../css/footer.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        h1 {
+            font-size: 35px;
+            color: rgb(243, 149, 7);
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: rgb(123, 123, 233);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .options button:hover {
+            background: rgb(54, 54, 131);
+        }
+
+        .selected {
+            background: rgb(54, 54, 131) !important;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: rgb(6, 201, 142);
+            color: white;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background: rgb(14, 165, 127);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="brand">
+            <img src="./../icon/virtual-class.png" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">LearnHub</h2>
+        </div>
+
+        <div class="menu">
+            <a class="menu-item" href="./../index.html">Home</a>
+            <a class="menu-item" href="about.html">About Us</a>
+            <a class="menu-item" href="courses.html">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test</a>
+                <div class="dropdown-content">
+                    <a href="quantitative.html">Quantitative Aptitude</a>
+                    <a href="logical.html">Logical Ability</a>
+                    <a href="verbal.html">Verbal Ability</a>
+                    <a href="certificate.html">Certificate</a>
+                </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            <a class="menu-item" href="login.html">Login</a>
+        </div>
+
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
+        </div>
+
+        <div id="themeToggle" class="themeToggle">🌙</div>
+
+        <div class="hamburger-menu">
+            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
+        </div>
+    </div>
+    <!--Navbar End-->
+
+    <h1>Quantitative Ability Mock Test</h1><br>
+
+    <!--Number System-->
+    <div class="container">
+        <h2>Number System</h2>
+        <div id="coding_decoding_quiz-container">
+            <p id="coding-decoding-question" class="question"></p>
+            <div id="coding-decoding-options" class="options"></div>
+            <button class="btn" onclick="coding_decoding_prevQuestion()">Previous</button>
+            <button class="btn" onclick="coding_decoding_nextQuestion()">Next</button>
+        </div>
+        <p id="coding-decoding-result"></p>
+    </div>
+
+    <br><br>
+
+    <!--  HCF and LCM   -->
+    <div class="container">
+        <h2>HCF and LCM</h2>
+        <div id="odd_quiz-container">
+            <p id="odd-question" class="question"></p>
+            <div id="odd-options" class="options"></div>
+            <button class="btn" onclick="odd_prevQuestion()">Previous</button>
+            <button class="btn" onclick="odd_nextQuestion()">Next</button>
+        </div>
+        <p id="odd-result"></p>
+    </div>
+
+    <br><br>
+
+    <!--   Simple Interest and Compound Interest  -->
+    <div class="container">
+        <h2>Simple Interest and Compound Interest</h2>
+        <div id="distance_quiz-container">
+            <p id="distance-question" class="question"></p>
+            <div id="distance-options" class="options"></div>
+            <button class="btn" onclick="distance_prevQuestion()">Previous</button>
+            <button class="btn" onclick="distance_nextQuestion()">Next</button>
+        </div>
+        <p id="distance-result"></p>
+    </div>
+
+    <br><br><br><br>
+
+    <!--Footer-->
+    <div class="footer-container">
+        <div class="footer-sub-container">
+            <div class="RTC">
+                <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
+                <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
+            </div>
+            <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+                and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+                students.</P>
+
+            <div class="footer-logo-container">
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.linkedin.com/in/nalinee-bodke-632134294/">
+                        <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://github.com/nalineebodke10">
+                        <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.youtube.com/">
+                        <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-Quick-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <a href="./../index.html" class="footer-courses">Home</a><br><br>
+            <a href="./about.html" class="footer-courses">About Us</a><br><br>
+            <a href="./courses.html" class="footer-courses">Courses</a><br><br>
+            <a href="./contact.html" class="footer-courses">Contact</a><br><br>
+        </div>
+
+        <div class="footer-Learn">
+            <h3>Courses</h3>
+            <p class="language">Quantitative Aptitude</p>
+            <p class="language">Logical Ability</p>
+            <p class="language">Verble ability</p>
+            <p class="language">Interview Preparation</p>
+        </div>
+
+        <div class="footer-Contact-Us">
+            <h3>Contact Us</h3>
+            <div class="footer-location-container">
+                <img src="./../icon/location.svg" alt="location" class="footer-icon">
+                <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                    Shewalewadi(Hadapsar), Pune - 412307</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/phone..svg" alt="location" class="footer-icon">
+                <p class="footer-location">+91-8767202017</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/email.svg" alt="location" class="footer-icon">
+                <p class="footer-location">nalineebodke1007@gmail.com</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!--Footer End-->
+
+    <script>
+
+        //  Coding Decoding 
+        let coding_questions = [
+            {
+                question: "What is the smallest prime number?",
+                options: ["1", "2", "3", "5"],
+                answer: "2",
+                selected: null
+            },
+            {
+                question: "Which of the following is an even number?",
+                options: ["13", "17", "22", "19"],
+                answer: "22",
+                selected: null
+            },
+            {
+                question: "What is the greatest 2-digit number?",
+                options: ["98", "99", "100", "97"],
+                answer: "99",
+                selected: null
+            },
+            {
+                question: "Which of these numbers is divisible by 3?",
+                options: ["14", "18", "22", "25"],
+                answer: "18",
+                selected: null
+            },
+            {
+                question: "What is the place value of 5 in 4527?",
+                options: ["5", "50", "500", "5000"],
+                answer: "500",
+                selected: null
+            },
+            {
+                question: "What is the smallest odd composite number?",
+                options: ["9", "15", "21", "25"],
+                answer: "9",
+                selected: null
+            },
+            {
+                question: "What is the sum of the first five natural numbers?",
+                options: ["10", "15", "20", "25"],
+                answer: "15",
+                selected: null
+            },
+            {
+                question: "Which is a perfect square?",
+                options: ["20", "36", "45", "50"],
+                answer: "36",
+                selected: null
+            },
+            {
+                question: "What is the HCF of 12 and 18?",
+                options: ["2", "3", "6", "9"],
+                answer: "6",
+                selected: null
+            },
+            {
+                question: "Which is not a prime number?",
+                options: ["2", "3", "5", "9"],
+                answer: "9",
+                selected: null
+            }
+        ];
+
+        let i = 0, coding_score = 0;
+
+        function coding_decoding_showQuestion() {
+            let q = coding_questions[i];
+            document.getElementById("coding-decoding-question").textContent = q.question;
+            let optionsDiv = document.getElementById("coding-decoding-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let btn = document.createElement("button");
+                btn.textContent = option;
+                if (q.selected === option) btn.classList.add("selected");
+                btn.onclick = () => coding_decoding_selectAnswer(btn, option);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function coding_decoding_selectAnswer(button, ans) {
+            let buttons = document.querySelectorAll("#coding-decoding-options button");
+            buttons.forEach(btn => btn.classList.remove("selected"));
+            button.classList.add("selected");
+            coding_questions[i].selected = ans;
+        }
+
+        function coding_decoding_nextQuestion() {
+            if (coding_questions[i].selected === coding_questions[i].answer) coding_score++;
+            if (i < coding_questions.length - 1) { i++; coding_decoding_showQuestion(); }
+            else {
+                document.getElementById("coding_decoding_quiz-container").style.display = "none";
+                document.getElementById("coding-decoding-result").textContent = "Score: " + coding_score + "/" + coding_questions.length;
+            }
+        }
+
+        function coding_decoding_prevQuestion() {
+            if (i > 0) { i--; coding_decoding_showQuestion(); }
+        }
+
+        coding_decoding_showQuestion();
+
+
+        //  HCF and LCF
+        let odd_questions = [
+            {
+                question: "What is the HCF of 18 and 24?",
+                options: ["6", "12", "3", "9"],
+                answer: "6",
+                selected: null
+            },
+            {
+                question: "What is the LCM of 5 and 10?",
+                options: ["10", "15", "20", "25"],
+                answer: "10",
+                selected: null
+            },
+            {
+                question: "The HCF of 16 and 28 is?",
+                options: ["2", "4", "6", "8"],
+                answer: "4",
+                selected: null
+            },
+            {
+                question: "The LCM of 8 and 12 is?",
+                options: ["24", "36", "48", "12"],
+                answer: "24",
+                selected: null
+            },
+            {
+                question: "Find the HCF of 36 and 60.",
+                options: ["6", "12", "18", "24"],
+                answer: "12",
+                selected: null
+            },
+            {
+                question: "Find the LCM of 9 and 15.",
+                options: ["30", "45", "60", "75"],
+                answer: "45",
+                selected: null
+            },
+            {
+                question: "What is the HCF of 45 and 75?",
+                options: ["5", "10", "15", "25"],
+                answer: "15",
+                selected: null
+            },
+            {
+                question: "The LCM of 7 and 14 is?",
+                options: ["14", "21", "28", "35"],
+                answer: "14",
+                selected: null
+            },
+            {
+                question: "The HCF of 63 and 105 is?",
+                options: ["9", "7", "21", "35"],
+                answer: "21",
+                selected: null
+            },
+            {
+                question: "The LCM of 11 and 22 is?",
+                options: ["11", "22", "33", "44"],
+                answer: "22",
+                selected: null
+            }
+        ];
+
+        let j = 0, odd_score = 0;
+
+        function odd_showQuestion() {
+            let q = odd_questions[j];
+            document.getElementById("odd-question").textContent = q.question;
+            let optionsDiv = document.getElementById("odd-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let btn = document.createElement("button");
+                btn.textContent = option;
+                if (q.selected === option) btn.classList.add("selected");
+                btn.onclick = () => odd_selectAnswer(btn, option);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function odd_selectAnswer(button, ans) {
+            let buttons = document.querySelectorAll("#odd-options button");
+            buttons.forEach(btn => btn.classList.remove("selected"));
+            button.classList.add("selected");
+            odd_questions[j].selected = ans;
+        }
+
+        function odd_nextQuestion() {
+            if (odd_questions[j].selected === odd_questions[j].answer) odd_score++;
+            if (j < odd_questions.length - 1) { j++; odd_showQuestion(); }
+            else {
+                document.getElementById("odd_quiz-container").style.display = "none";
+                document.getElementById("odd-result").textContent = "Score: " + odd_score + "/" + odd_questions.length;
+            }
+        }
+
+        function odd_prevQuestion() {
+            if (j > 0) { j--; odd_showQuestion(); }
+        }
+
+        odd_showQuestion();
+
+
+        // Simple Interest and Compound interest
+        let distance_questions = [
+        {
+        question: "What is the Simple Interest on ₹5000 for 2 years at 5% per annum?",
+        options: ["₹250", "₹400", "₹500", "₹600"],
+        answer: "₹500",
+        selected: null
+    },
+    {
+        question: "Find the Compound Interest on ₹2000 for 2 years at 5% per annum.",
+        options: ["₹200", "₹205", "₹210", "₹220"],
+        answer: "₹205",
+        selected: null
+    },
+    {
+        question: "What is the amount after 3 years on ₹1000 at 10% p.a Simple Interest?",
+        options: ["₹1200", "₹1300", "₹1400", "₹1500"],
+        answer: "₹1300",
+        selected: null
+    },
+    {
+        question: "The Simple Interest on ₹4000 for 3 years at 6% per annum is?",
+        options: ["₹640", "₹700", "₹720", "₹750"],
+        answer: "₹720",
+        selected: null
+    },
+    {
+        question: "Find the Compound Interest on ₹5000 at 8% per annum for 1 year.",
+        options: ["₹350", "₹400", "₹450", "₹500"],
+        answer: "₹400",
+        selected: null
+    },
+    {
+        question: "What is the Simple Interest on ₹8000 for 4 years at 7% per annum?",
+        options: ["₹2100", "₹2240", "₹2300", "₹2400"],
+        answer: "₹2240",
+        selected: null
+    },
+    {
+        question: "The Compound Interest on ₹1000 for 2 years at 10% p.a is?",
+        options: ["₹200", "₹210", "₹220", "₹230"],
+        answer: "₹210",
+        selected: null
+    },
+    {
+        question: "Find the amount on ₹3000 after 2 years at 5% p.a Simple Interest.",
+        options: ["₹3200", "₹3300", "₹3400", "₹3500"],
+        answer: "₹3300",
+        selected: null
+    },
+    {
+        question: "What is the Compound Interest on ₹6000 at 5% per annum for 2 years?",
+        options: ["₹610", "₹615", "₹620", "₹630"],
+        answer: "₹615",
+        selected: null
+    },
+    {
+        question: "The Simple Interest on ₹2500 for 5 years at 4% per annum is?",
+        options: ["₹500", "₹400", "₹450", "₹480"],
+        answer: "₹500",
+        selected: null
+    }
+        ];
+
+        let k = 0, distance_score = 0;
+
+        function distance_showQuestion() {
+            let q = distance_questions[k];
+            document.getElementById("distance-question").textContent = q.question;
+            let optionsDiv = document.getElementById("distance-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let btn = document.createElement("button");
+                btn.textContent = option;
+                if (q.selected === option) btn.classList.add("selected");
+                btn.onclick = () => distance_selectAnswer(btn, option);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function distance_selectAnswer(button, ans) {
+            let buttons = document.querySelectorAll("#distance-options button");
+            buttons.forEach(btn => btn.classList.remove("selected"));
+            button.classList.add("selected");
+            distance_questions[k].selected = ans;
+        }
+
+        function distance_nextQuestion() {
+            if (distance_questions[k].selected === distance_questions[k].answer) distance_score++;
+            if (k < distance_questions.length - 1) { k++; distance_showQuestion(); }
+            else {
+                document.getElementById("distance_quiz-container").style.display = "none";
+                document.getElementById("distance-result").textContent = "Score: " + distance_score + "/" + distance_questions.length;
+            }
+        }
+
+        function distance_prevQuestion() {
+            if (k > 0) { k--; distance_showQuestion(); }
+        }
+
+        distance_showQuestion();
+
+    </script>
+</body>
+
+</html>
