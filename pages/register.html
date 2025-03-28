@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - LearnHub</title>
-    <link rel="stylesheet" href="../css/register.css">
+ <link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
-
     <button id="themeToggle">🌙</button>
-
     <div class="container">
         <h2>Register on LearnHub</h2>
 
@@ -49,11 +47,7 @@
         // Show/Hide Password Toggle
         function togglePassword() {
             const passwordField = document.getElementById("password");
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-            } else {
-                passwordField.type = "password";
-            }
+            passwordField.type = passwordField.type === "password" ? "text" : "password";
         }
 
         // Register Function (Stores Data in LocalStorage)
@@ -62,26 +56,96 @@
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            // Validate inputs
             if (!name || !email || !password) {
                 alert("Please fill in all fields!");
                 return;
             }
 
-            // Check if user already exists
             if (localStorage.getItem(email)) {
                 alert("Email already registered! Please use a different email.");
                 return;
             }
 
-            // Store user data in LocalStorage
             const userData = { name, email, password };
             localStorage.setItem(email, JSON.stringify(userData));
 
             alert("Registration Successful! You can now log in.");
-            window.location.href = "login.html"; // Redirect to login page
+            window.location.href = "login.html";
         }
     </script>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar {
+            height: 60px;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-icon {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .brand-heading {
+            font-size: 22px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-item {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu-item:hover {
+            color: #17a2b8;
+        }
+
+        .search .input-search {
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        .themeToggle {
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            margin: 50px auto;
+        }
+    </style>
 </body>
 </html>
