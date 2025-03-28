@@ -23,7 +23,7 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
 
-        h1{
+        h1 {
             font-size: 35px;
             color: rgb(243, 149, 7);
         }
@@ -70,6 +70,37 @@
 
         .btn:hover {
             background: rgb(14, 165, 127);
+        }
+
+        /* Media Query For Small Device */
+        @media (max-width: 450px) {
+
+            .container {
+                width: 70%;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .question {
+                font-size: 15px;
+            }
+
+            .options button {
+                padding: 6px;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                margin: 5px;
+                width: 100px;
+            }
+
         }
     </style>
 </head>
