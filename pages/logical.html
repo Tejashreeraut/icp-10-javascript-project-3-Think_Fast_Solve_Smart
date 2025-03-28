@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Reasoning Mock Test</title>
+    <link rel="stylesheet" href="./../css/navbar.css" />
+    <link rel="stylesheet" href="./../css/footer.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        h1{
+            font-size: 35px;
+            color: rgb(243, 149, 7);
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: rgb(123, 123, 233);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .options button:hover {
+            background: rgb(71, 71, 139) ;
+        }
+
+        .selected {
+            background: rgb(71, 71, 139) !important;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: rgb(6, 201, 142);
+            color: white;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background: rgb(14, 165, 127);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="brand">
+            <img src="./../icon/virtual-class.png" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">LearnHub</h2>
+        </div>
+
+        <div class="menu">
+            <a class="menu-item" href="./../index.html">Home</a>
+            <a class="menu-item" href="about.html">About Us</a>
+            <a class="menu-item" href="courses.html">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test</a>
+                <div class="dropdown-content">
+                    <a href="quantitative.html">Quantitative Aptitude</a>
+                    <a href="logical.html">Logical Ability</a>
+                    <a href="verble.html">Verble Ability</a>
+                </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            <a class="menu-item" href="login.html">Login</a>
+        </div>
+
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
+        </div>
+
+        <div id="themeToggle" class="themeToggle">🌙</div>
+
+        <div class="hamburger-menu">
+            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
+        </div>
+    </div>
+    <!--Navbar End-->
+
+    <h1>Logical Reasoning Mock Test</h1><br>
+
+    <!--Coding Decoding-->
+    <div class="container">
+        <h2>Coding-Decoding</h2>
+        <div id="coding_decoding_quiz-container">
+            <p id="coding-decoding-question" class="question"></p>
+            <div id="coding-decoding-options" class="options"></div>
+            <button class="btn" onclick="coding_decoding_prevQuestion()">Previous</button>
+            <button class="btn" onclick="coding_decoding_nextQuestion()">Next</button>
+        </div>
+        <p id="coding-decoding-result"></p>
+    </div>
+
+    <br><br>
+
+    <!--Odd One Out-->
+    <div class="container">
+        <h2>Odd One Out</h2>
+        <div id="odd_quiz-container">
+            <p id="odd-question" class="question"></p>
+            <div id="odd-options" class="options"></div>
+            <button class="btn" onclick="odd_prevQuestion()">Previous</button>
+            <button class="btn" onclick="odd_nextQuestion()">Next</button>
+        </div>
+        <p id="odd-result"></p>
+    </div>
+
+    <br><br>
+
+    <!--Distance and Direction-->
+    <div class="container">
+        <h2>Distance and Direction</h2>
+        <div id="distance_quiz-container">
+            <p id="distance-question" class="question"></p>
+            <div id="distance-options" class="options"></div>
+            <button class="btn" onclick="distance_prevQuestion()">Previous</button>
+            <button class="btn" onclick="distance_nextQuestion()">Next</button>
+        </div>
+        <p id="distance-result"></p>
+    </div>
+
+    <br><br><br><br>
+
+    <!--Footer-->
+    <div class="footer-container">
+        <div class="footer-sub-container">
+            <div class="RTC">
+                <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
+                <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
+            </div>
+            <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+                and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+                students.</P>
+
+            <div class="footer-logo-container">
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.linkedin.com/in/nalinee-bodke-632134294/">
+                        <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://github.com/nalineebodke10">
+                        <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.youtube.com/">
+                        <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-Quick-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <a href="./../index.html" class="footer-courses">Home</a><br><br>
+            <a href="./about.html" class="footer-courses">About Us</a><br><br>
+            <a href="./courses.html" class="footer-courses">Courses</a><br><br>
+            <a href="./contact.html" class="footer-courses">Contact</a><br><br>
+        </div>
+
+        <div class="footer-Learn">
+            <h3>Courses</h3>
+            <p class="language">Quantitative Aptitude</p>
+            <p class="language">Logical Ability</p>
+            <p class="language">Verble ability</p>
+            <p class="language">Interview Preparation</p>
+        </div>
+
+        <div class="footer-Contact-Us">
+            <h3>Contact Us</h3>
+            <div class="footer-location-container">
+                <img src="./../icon/location.svg" alt="location" class="footer-icon">
+                <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                    Shewalewadi(Hadapsar), Pune - 412307</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/phone..svg" alt="location" class="footer-icon">
+                <p class="footer-location">+91-8767202017</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/email.svg" alt="location" class="footer-icon">
+                <p class="footer-location">nalineebodke1007@gmail.com</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!--Footer End-->
+
+    <script>
+
+        //  Coding Decoding 
+        let coding_questions = [
+            {
+                question: "If APPLE is coded as ELPPA, how is TABLE coded?",
+                options: ["ELBAT", "BATLE", "BLEAT", "TABLE"],
+                answer: "ELBAT",
+                selected: null
+            },
+            {
+                question: "If CAT is coded as DBU, how is DOG coded?",
+                options: ["DPI", "EPI", "DPO", "EOG"],
+                answer: "EPI",
+                selected: null
+            },
+            {
+                question: "If TREE is written as UQFF, then LEAF is written as?",
+                options: ["MFBG", "MEAG", "MFBH", "MEAH"],
+                answer: "MFBG",
+                selected: null
+            },
+            {
+                question: "If BOOK is coded as COOP, how is LOOK coded?",
+                options: ["MOOP", "KOOL", "NOOP", "LOOP"],
+                answer: "MOOP",
+                selected: null
+            },
+            {
+                question: "If ROAD is coded as URDG, then BRIDGE is coded as?",
+                options: ["EULGJH", "ESMGHF", "ETMGJF", "EUMGJF"],
+                answer: "EUMGJF",
+                selected: null
+            },
+            {
+                question: "In a certain code, FLOWER is written as GMRXFS, how is GARDEN written?",
+                options: ["HBSFMO", "HBSEMF", "HCSFMF", "HCSFLM"],
+                answer: "HBSFMO",
+                selected: null
+            },
+            {
+                question: "If MOBILE is written as NQDLJG, how will LAPTOP be written?",
+                options: ["MDSUPO", "MBRSQP", "MBRSPO", "MBSSPO"],
+                answer: "MBRSPO",
+                selected: null
+            },
+            {
+                question: "If HOUSE is written as IPVTF, how is WINDOW written?",
+                options: ["XJOEPX", "XJNEPX", "XJOFPX", "XJODPX"],
+                answer: "XJOEPX",
+                selected: null
+            },
+            {
+                question: "If COLD is coded as DPME, how is WARM coded?",
+                options: ["XBSN", "VZQN", "XASN", "VZRN"],
+                answer: "XBSN",
+                selected: null
+            },
+            {
+                question: "If KING is written as LJOH, how is QUEEN written?",
+                options: ["RVFFO", "RVFFM", "RWFFO", "RVGGO"],
+                answer: "RVFFO",
+                selected: null
+            }
+        ];
+
+        let i = 0, coding_score = 0;
+
+        function coding_decoding_showQuestion() {
+            let q = coding_questions[i];
+            document.getElementById("coding-decoding-question").textContent = q.question;
+            let optionsDiv = document.getElementById("coding-decoding-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let btn = document.createElement("button");
+                btn.textContent = option;
+                if (q.selected === option) btn.classList.add("selected");
+                btn.onclick = () => coding_decoding_selectAnswer(btn, option);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function coding_decoding_selectAnswer(button, ans) {
+            let buttons = document.querySelectorAll("#coding-decoding-options button");
+            buttons.forEach(btn => btn.classList.remove("selected"));
+            button.classList.add("selected");
+            coding_questions[i].selected = ans;
+        }
+
+        function coding_decoding_nextQuestion() {
+            if (coding_questions[i].selected === coding_questions[i].answer) coding_score++;
+            if (i < coding_questions.length - 1) { i++; coding_decoding_showQuestion(); }
+            else {
+                document.getElementById("coding_decoding_quiz-container").style.display = "none";
+                document.getElementById("coding-decoding-result").textContent = "Score: " + coding_score + "/" + coding_questions.length;
+            }
+        }
+
+        function coding_decoding_prevQuestion() {
+            if (i > 0) { i--; coding_decoding_showQuestion(); }
+        }
+
+        coding_decoding_showQuestion();
+
+
+        //  Odd One Out 
+        let odd_questions = [
+            {
+                question: "Find the odd one out: Apple, Mango, Carrot, Banana",
+                options: ["Apple", "Mango", "Carrot", "Banana"],
+                answer: "Carrot",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Table, Chair, Pen, Sofa",
+                options: ["Table", "Chair", "Pen", "Sofa"],
+                answer: "Pen",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Red, Blue, Green, Dog",
+                options: ["Red", "Blue", "Green", "Dog"],
+                answer: "Dog",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Rose, Lily, Lotus, Apple",
+                options: ["Rose", "Lily", "Lotus", "Apple"],
+                answer: "Apple",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Cat, Dog, Cow, Tiger",
+                options: ["Cat", "Dog", "Cow", "Tiger"],
+                answer: "Cow",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Car, Bus, Train, Cycle",
+                options: ["Car", "Bus", "Train", "Cycle"],
+                answer: "Cycle",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Monday, Sunday, Friday, January",
+                options: ["Monday", "Sunday", "Friday", "January"],
+                answer: "January",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Oxygen, Hydrogen, Nitrogen, Plastic",
+                options: ["Oxygen", "Hydrogen", "Nitrogen", "Plastic"],
+                answer: "Plastic",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Cricket, Football, Hockey, Reading",
+                options: ["Cricket", "Football", "Hockey", "Reading"],
+                answer: "Reading",
+                selected: null
+            },
+            {
+                question: "Find the odd one out: Square, Rectangle, Circle, Triangle",
+                options: ["Square", "Rectangle", "Circle", "Triangle"],
+                answer: "Circle",
+                selected: null
+            }
+        ];
+
+        let j = 0, odd_score = 0;
+
+        function odd_showQuestion() {
+            let q = odd_questions[j];
+            document.getElementById("odd-question").textContent = q.question;
+            let optionsDiv = document.getElementById("odd-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let btn = document.createElement("button");
+                btn.textContent = option;
+                if (q.selected === option) btn.classList.add("selected");
+                btn.onclick = () => odd_selectAnswer(btn, option);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function odd_selectAnswer(button, ans) {
+            let buttons = document.querySelectorAll("#odd-options button");
+            buttons.forEach(btn => btn.classList.remove("selected"));
+            button.classList.add("selected");
+            odd_questions[j].selected = ans;
+        }
+
+        function odd_nextQuestion() {
+            if (odd_questions[j].selected === odd_questions[j].answer) odd_score++;
+            if (j < odd_questions.length - 1) { j++; odd_showQuestion(); }
+            else {
+                document.getElementById("odd_quiz-container").style.display = "none";
+                document.getElementById("odd-result").textContent = "Score: " + odd_score + "/" + odd_questions.length;
+            }
+        }
+
+        function odd_prevQuestion() {
+            if (j > 0) { j--; odd_showQuestion(); }
+        }
+
+        odd_showQuestion();
+
+
+        // Distance and Direction 
+        let distance_questions = [
+            {
+                question: "Ravi walks 10 km North, then turns right and walks 5 km, then turns right and walks 10 km. How far is he from the starting point?",
+                options: ["5 km", "10 km", "15 km", "20 km"],
+                answer: "5 km",
+                selected: null
+            },
+            {
+                question: "A person walks 20 km East, then turns North and walks 10 km, then turns West and walks 5 km. How far is he from the starting point?",
+                options: ["15 km", "25 km", "10 km", "20 km"],
+                answer: "15 km",
+                selected: null
+            },
+            {
+                question: "Manish starts walking towards the South and walks 15 km, then he turns to his right and walks 10 km. In which direction is he now facing?",
+                options: ["West", "North", "East", "South"],
+                answer: "West",
+                selected: null
+            },
+            {
+                question: "A man walks 8 km North, then turns East and walks 6 km, then turns South and walks 8 km. How far is he from the starting point?",
+                options: ["6 km", "8 km", "10 km", "14 km"],
+                answer: "6 km",
+                selected: null
+            },
+            {
+                question: "If South-East becomes North, North-East becomes West and so on, what will West become?",
+                options: ["South-East", "South-West", "North-East", "North-West"],
+                answer: "South-East",
+                selected: null
+            },
+            {
+                question: "A person starts walking towards the East and walks 30 m, then turns left and walks 40 m. Then turns left and walks 30 m. How far is he from the starting point?",
+                options: ["20 m", "30 m", "40 m", "50 m"],
+                answer: "40 m",
+                selected: null
+            },
+            {
+                question: "Ravi is facing North. He turns 90 degrees clockwise, then again turns 90 degrees clockwise. In which direction is he facing now?",
+                options: ["South", "West", "East", "North"],
+                answer: "South",
+                selected: null
+            },
+            {
+                question: "A man walks 12 km towards the North, then 5 km to the East, then 12 km to the South. How far is he from the starting point?",
+                options: ["5 km", "10 km", "15 km", "20 km"],
+                answer: "5 km",
+                selected: null
+            },
+            {
+                question: "Rina walks 7 km East, then turns North and walks 5 km. How far is she from the starting point?",
+                options: ["8.6 km", "9 km", "11 km", "12 km"],
+                answer: "8.6 km",
+                selected: null
+            },
+            {
+                question: "If you are facing East, and you turn 270 degrees clockwise, what direction will you be facing?",
+                options: ["North", "South", "West", "East"],
+                answer: "North",
+                selected: null
+            }
+        ];
+
+        let k = 0, distance_score = 0;
+
+        function distance_showQuestion() {
+            let q = distance_questions[k];
+            document.getElementById("distance-question").textContent = q.question;
+            let optionsDiv = document.getElementById("distance-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let btn = document.createElement("button");
+                btn.textContent = option;
+                if (q.selected === option) btn.classList.add("selected");
+                btn.onclick = () => distance_selectAnswer(btn, option);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function distance_selectAnswer(button, ans) {
+            let buttons = document.querySelectorAll("#distance-options button");
+            buttons.forEach(btn => btn.classList.remove("selected"));
+            button.classList.add("selected");
+            distance_questions[k].selected = ans;
+        }
+
+        function distance_nextQuestion() {
+            if (distance_questions[k].selected === distance_questions[k].answer) distance_score++;
+            if (k < distance_questions.length - 1) { k++; distance_showQuestion(); }
+            else {
+                document.getElementById("distance_quiz-container").style.display = "none";
+                document.getElementById("distance-result").textContent = "Score: " + distance_score + "/" + distance_questions.length;
+            }
+        }
+
+        function distance_prevQuestion() {
+            if (k > 0) { k--; distance_showQuestion(); }
+        }
+
+        distance_showQuestion();
+
+    </script>
+</body>
+
+</html>
