@@ -34,7 +34,8 @@ With industry-leading instructors and interactive learning modules, LearnHub ens
 ## Contributors
 
  <a href="https://github.com/ganeshgore1811/icp-10-javascript-project-3-Think_Fast_Solve_Smart/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ganeshgore1811/icp-10-javascript-project-3-Think_Fast_Solve_Smart.git" />
+  <img src="https://contrib.rocks/image?repo=ganeshgore1811/icp-10-javascript-project-3" />
+
 </a>
 
 ## Support
