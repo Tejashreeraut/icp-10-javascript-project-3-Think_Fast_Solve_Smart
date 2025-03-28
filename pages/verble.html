@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbal Ability Mock Test</title>
+    <link rel="stylesheet" href="./../css/navbar.css" />
+    <link rel="stylesheet" href="./../css/footer.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        h1 {
+            font-size: 35px;
+            color: rgb(243, 149, 7);
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: rgb(123, 123, 233);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .options button:hover {
+            background: rgb(54, 54, 131);
+        }
+
+        .selected {
+            background: rgb(54, 54, 131) !important;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: rgb(6, 201, 142);
+            color: white;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background: rgb(14, 165, 127);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="brand">
+            <img src="./../icon/virtual-class.png" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">LearnHub</h2>
+        </div>
+
+        <div class="menu">
+            <a class="menu-item" href="./../index.html">Home</a>
+            <a class="menu-item" href="about.html">About Us</a>
+            <a class="menu-item" href="courses.html">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test</a>
+                <div class="dropdown-content">
+                    <a href="quantitative.html">Quantitative Aptitude</a>
+                    <a href="logical.html">Logical Ability</a>
+                    <a href="verbal.html">Verbal Ability</a>
+                </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            <a class="menu-item" href="login.html">Login</a>
+        </div>
+
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
+        </div>
+
+        <div id="themeToggle" class="themeToggle">🌙</div>
+
+        <div class="hamburger-menu">
+            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
+        </div>
+    </div>
+    <!--Navbar End-->
+
+    <!--Verbal Ability-->
+    <br><br>
+    <div class="container">
+        <h1>Verbal Ability Mock Test</h1><br>
+        <div id="coding_decoding_quiz-container">
+            <p id="coding-decoding-question" class="question"></p>
+            <div id="coding-decoding-options" class="options"></div>
+            <button class="btn" onclick="coding_decoding_prevQuestion()">Previous</button>
+            <button class="btn" onclick="coding_decoding_nextQuestion()">Next</button>
+        </div>
+        <p id="coding-decoding-result"></p>
+    </div>
+
+    <br><br><br><br>
+
+    <!--Footer-->
+    <div class="footer-container">
+        <div class="footer-sub-container">
+            <div class="RTC">
+                <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
+                <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
+            </div>
+            <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+                and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+                students.</P>
+
+            <div class="footer-logo-container">
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.linkedin.com/in/nalinee-bodke-632134294/">
+                        <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://github.com/nalineebodke10">
+                        <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.youtube.com/">
+                        <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-Quick-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <a href="./../index.html" class="footer-courses">Home</a><br><br>
+            <a href="./about.html" class="footer-courses">About Us</a><br><br>
+            <a href="./courses.html" class="footer-courses">Courses</a><br><br>
+            <a href="./contact.html" class="footer-courses">Contact</a><br><br>
+        </div>
+
+        <div class="footer-Learn">
+            <h3>Courses</h3>
+            <p class="language">Quantitative Aptitude</p>
+            <p class="language">Logical Ability</p>
+            <p class="language">Verbal Ability</p>
+            <p class="language">Interview Preparation</p>
+        </div>
+
+        <div class="footer-Contact-Us">
+            <h3>Contact Us</h3>
+            <div class="footer-location-container">
+                <img src="./../icon/location.svg" alt="location" class="footer-icon">
+                <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                    Shewalewadi(Hadapsar), Pune - 412307</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/phone..svg" alt="location" class="footer-icon">
+                <p class="footer-location">+91-8767202017</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/email.svg" alt="location" class="footer-icon">
+                <p class="footer-location">nalineebodke1007@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!--Footer End-->
+
+    <script>
+
+        // Verbal Ability Questions
+        let verbal_questions = [
+            {
+                question: "Choose the correct synonym of 'Happy'.",
+                options: ["Sad", "Joyful", "Angry", "Tired"],
+                answer: "Joyful",
+                selected: null
+            },
+            {
+                question: "Choose the antonym of 'Strong'.",
+                options: ["Weak", "Powerful", "Healthy", "Bold"],
+                answer: "Weak",
+                selected: null
+            },
+            {
+                question: "Choose the correct spelling.",
+                options: ["Accomodate", "Acommodate", "Accommodate", "Acomodat"],
+                answer: "Accommodate",
+                selected: null
+            },
+            {
+                question: "Find the correctly arranged sentence: 'the / beautiful / is / sky'",
+                options: ["The beautiful is sky", "The sky beautiful is", "Sky is the beautiful", "The sky is beautiful"],
+                answer: "The sky is beautiful",
+                selected: null
+            },
+            {
+                question: "Choose the one word substitution: 'A person who writes poems'",
+                options: ["Painter", "Dancer", "Poet", "Singer"],
+                answer: "Poet",
+                selected: null
+            },
+            {
+                question: "Fill in the blank: She _____ the homework before dinner.",
+                options: ["finish", "finishing", "finished", "finishes"],
+                answer: "finished",
+                selected: null
+            },
+            {
+                question: "Choose the correct indirect speech: He said, 'I am busy now.'",
+                options: ["He said that he was busy then.", "He said that he is busy now.", "He said that he has been busy.", "He said that he had been busy."],
+                answer: "He said that he was busy then.",
+                selected: null
+            },
+            {
+                question: "Choose the correct active voice: The song was sung by her.",
+                options: ["She sang the song.", "She sings the song.", "The song sings her.", "Her sang the song."],
+                answer: "She sang the song.",
+                selected: null
+            },
+            {
+                question: "Identify the error: He do not like coffee.",
+                options: ["He", "do not", "like", "coffee"],
+                answer: "do not",
+                selected: null
+            },
+            {
+                question: "Choose the correct idiom: He kicked the bucket.",
+                options: ["He played football.", "He made a mistake.", "He died.", "He started a fight."],
+                answer: "He died.",
+                selected: null
+            }
+        ];
+
+        let i = 0, coding_score = 0;
+
+        function coding_decoding_showQuestion() {
+            let q = verbal_questions[i];
+            document.getElementById("coding-decoding-question").textContent = q.question;
+            let optionsDiv = document.getElementById("coding-decoding-options");
+            optionsDiv.innerHTML = "";
+            q.options.forEach(option => {
+                let button = document.createElement("button");
+                button.textContent = option;
+                button.onclick = function () {
+                    verbal_questions[i].selected = option;
+                    coding_decoding_showQuestion();
+                };
+                if (q.selected === option) {
+                    button.classList.add("selected");
+                }
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function coding_decoding_nextQuestion() {
+            if (i < verbal_questions.length - 1) {
+                i++;
+                coding_decoding_showQuestion();
+            } else {
+                coding_score = verbal_questions.filter(q => q.selected === q.answer).length;
+                document.getElementById("coding_decoding_quiz-container").style.display = "none";
+                document.getElementById("coding-decoding-result").textContent = "You scored " + coding_score + " out of " + verbal_questions.length;
+            }
+        }
+
+        function coding_decoding_prevQuestion() {
+            if (i > 0) {
+                i--;
+                coding_decoding_showQuestion();
+            }
+        }
+
+        window.onload = coding_decoding_showQuestion;
+    </script>
+
+</body>
+
+</html>
