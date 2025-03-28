@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(239, 239, 239);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    background-color:#c62828;
+    color: rgb(223, 211, 211);
+    text-align: center;
+    padding: 24px 0;
+}
+h1{
+    margin: 0;
+    font-size: 32px;
+    background-color: yellow;
+}
+p{
+    font-size: 17px;
+    margin-top: 8px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 32px;
+}
+.contact-info{
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 24px;
+    margin: 16px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+.contact-info:hover
+{
+    background-color: rgb(226, 224, 225);
+
+}
+ .contact-info h2{
+    color: #c62828;
+ }
+.contact-info p{
+    margin: 8px 0;
+
+}
+.contact-form button:hover{
+    background-color:#c62828
+}

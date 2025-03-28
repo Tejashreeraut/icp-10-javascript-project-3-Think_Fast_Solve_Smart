@@ -4,103 +4,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">
-            <img src="./icon/problem-solve.png" height="50px"/>
+        <div class="brand">
+            <img src="./image/about-whoare.jpg" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">LearnHub</h2>
         </div>
-        <div class="navitem">
-            <a href="./pages/">Home</a> &nbsp;&nbsp;
-            <a href="./pages/about.html">About</a>&nbsp;&nbsp;
-            <a href="./pages/contact.html">Contact</a>&nbsp;&nbsp;
-            <a href="./pages/certificate.html">Certificate</a>&nbsp;&nbsp;
-            <a href="./.html">Courses</a>&nbsp;&nbsp;
-            <a href="./pages/blood_availability.html">Login</a>&nbsp;&nbsp;
-            <a href="./pages/camp.html">Quiz</a>&nbsp;&nbsp;
-            <a href="./pages/bloodbank_location.html">Register</a>&nbsp;&nbsp;
-            <a href="./pages/donate_blood.html">Blog</a>&nbsp;&nbsp;
-            <a href="./pages/blood_chart.html"></a>&nbsp;&nbsp;
-            <div class="heading"> &nbsp;&nbsp;
-                
-             <h2>Think_Fast_Solve_Smart</h2>
-             <marquee>Join us today!</marquee>
+
+        <div class="menu">
+            <a class="menu-item" href="#">Home</a>
+            <a class="menu-item" href="#">About Us</a>
+            <a class="menu-item" href="#">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="pages/educational-quizz.html">Quantitative Aptitude</a>
+                    <a href="pages/fun-quizz.html">Logical Ability</a>
+                    <a href="pages/gk-quizz.html">Verble Ability</a>
+                </div>
+            </div>
+            <a class="menu-item" href="#">Contact</a>
+            <a class="menu-item" href="#">login</a>
         </div>
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
         </div>
-        <section class="home" id="home">
+        <div id="themeToggle" class="themeToggle">🌙</div>
+
+        <div class="hamburger-menu">
+            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
+        </div>
+    </div>
+   
+
+
+
+
+       <section class="home" id="home">
             <div class="content">
                 <h3>welcome to our <span>Think_Fast_Solve_Smart<br> Queezland Platform!!!</span></h3>
                 <a href="pages/quizz-list.html" class="btn">Learn more</a>
             </div>
             <div class="image">
-                <img src="./image/home-page-images.avif" height="400px" width="400px">
+                <img src="./image/mockkkkk.jpg" >
             </div>
-
-
-
             <section class="about" id="about">
                 <h1 class="heading"> <span>Lets Start</span> </h1>
-                    <div class="row">
-                        <div class="image">
-                            <img src="./image/quiz.jpg">
-                        </div>
                         <div class="content">
-                            <h3>Exploring, Growing, And Thriving Together</h3>
+                            <h3>Exploring, Growing, And Thriving Together>>></h3>
                             <p>Exploration and learning go hand-in-hand. When kids explore, they engage with their
                                 surroundings and develop a deeper understanding of the world. This natural curiosity drives
                                 them to ask questions, seek answers, and gain knowledge. At Think_Fast_Solve_Smart Quizzland, we encourage
                                 this inquisitive spirit through a variety of interactive quizzes and activities.</p>
-                            <a href="pages/aboutus.html" class="btn">read more</a>
+                          <h1>  read more</h1>
                         </div>
                     </div>
-                    </h1>
-            </section>
-            <div class="footer">
 
-                <div class="box-container">
-    
-                    <div class="box">
-                        <span id="name1">K</span><span id="name2">I</span><span id="name3">D</span><span
-                            id="name4">S</span><br><span id="text">Quizzland</span>
-                       
+
+
+                <!slide-->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="./image/slide3.jpg" height="200px" width="200px" alt="Image 1">
+                      <div class="text">Caption 1</div>
                     </div>
-    
-                    <div class="box">
-                        <h3>quick links</h3>
-                        <a href="./pages/about.html"><i class="fas fa-caret-right"></i>Aboutus</a>
-                        <a href="./pages/quiz.html"><i class="fas fa-caret-right"></i>Quizz-List</a>
-                        <a href="./pages/contact.html"><i class="fas fa-caret-right"></i>Contactus</a>
-                        <a href="./pages/certificate.html"><i class="fas fa-caret-right"></i>Certificate</a>
+                    <div class="mySlides fade">
+                      <img src="./image/slide2.jpg" alt="Image 2">
+                      <div class="text">Caption 2</div>
                     </div>
-    
-                    <div class="box1" id="social-media">
-                        <h3>Connect With Us</h3>
-                        <a href="https://www.linkedin.com/in/rutuja-sanap-07096b284/" target="blank"><img src="icon/linkdln.png"
-                                height="40px" class="social-media"></a>
-                        <a href="https://github.com/Rutuja20Sanap"><img src="icon/github.png" height="40px"
-                                class="social-media"></a>
-                        <a href="tel:+919322396408"><img src="icon/whatsapps.png" height="40px"></a>
-                        <a href="#"><img src="icon/facebook.png" height="40px" class="social-media"></a>
+                    <div class="mySlides fade">
+                      <img src="./image/slide1.jpg" alt="Image 3">
+                      <div class="text">Caption 3</div>
                     </div>
-    
-                    <div class="box ">
-                        <h3>Get in touch</h3>
-                            <a href="https://wa.me/+919322396408" target="_blank"><i class="fas fa-caret-right"></i>+91 9767396408</a>
-                            <a href="https://wa.me/+917350371422" target="_blank"><i class="fas fa-caret-right"></i>+91 86770371422</a>        
-                            <a href="https://wa.me/+918010825030" target="_blank"><i class="fas fa-caret-right"></i>+91 807867825030</a>
-                            <a href="https://wa.me/+919860312523" target="_blank"><i class="fas fa-caret-right"></i>+91 987667312523</a>
-                            <a href="https://wa.me/+918390074057" target="_blank"><i class="fas fa-caret-right"></i>+91 86557654057</a>
-        
-                            <a href="mailto:tejur9618@gmail.com"><i class="fas fa-caret-right"></i>kidsquizzland.com</a>
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                    <div class="dot-container">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
-                   
-    
-                </div>
-    
-                <div class="credit"> &copy; copyright @ 2024 by <span>Kids Quizzland</span></div>
+                  </div>
+
+
+
+                    <h1 class="onlineapt">
+                        Online aptitude tests for  <br>empowered hiring decisions 
+                       </h1>
+                  
+<div class="card-container">
+    <div class="card">
+    <h2 class="card-title">Campus hiring</h2>
+    <p class="card-text">Campus hiring</p>
+    <h4>This aptitude test for hiring that aid in campus hiring and predicting the right fit.</h4>
+    <button class="card-button">Read More</button>
+  </div>
+  <div class="card">
+    <h2 class="card-title">Lateral hiring</h2>
+    <p class="card-text">Lateral hiring</p>
+    <h4>Online assessment tests that accurately measure candidate fit and potential for success</h4>
+    <button class="card-button">Read More</button>
+  </div>
+  <div class="card">
+    <h2 class="card-title">Succession planning</h2>
+    <p class="card-text">Succession planning</p>
+    <h4>Aptitude assessment that help identify and develop potential leaders of tomorrow</h4>
+    <button class="card-button">Read More</button>
+  </div>
+</div>
+
+
+
+!--Footer-->
+<div class="footer-container">
+    <div class="footer-sub-container">
+        <div class="RTC">
+            <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
+            <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
+        </div>
+        <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+            and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+            students.</P>
+
+        <div class="footer-logo-container">
+            <div class="footer-sub-logo-container">
+                <a href="#">
+                    <img src="./icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
             </div>
-             <!--footer section end-->
+
+            <div class="footer-sub-logo-container">
+                <a href="https://www.linkedin.com/in/nalinee-bodke-632134294/">
+                    <img src="./icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://github.com/nalineebodke10">
+                    <img src="./icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://www.youtube.com/">
+                    <img src="./icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="#">
+                    <img src="./icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="#">
+                    <img src="./icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-Quick-links">
+        <h3 class="footer-heading">Quick Links</h3>
+        <a href="./../index.html" class="footer-courses">Home</a><br><br>
+        <a href="./about.html" class="footer-courses">About Us</a><br><br>
+        <a href="./courses.html" class="footer-courses">Courses</a><br><br>
+        <a href="./contact.html" class="footer-courses">Contact</a><br><br>
+    </div>
+
+    <div class="footer-Learn">
+        <h3>Courses</h3>
+        <p class="language">Quantitative Aptitude</p>
+        <p class="language">Logical Ability</p>
+        <p class="language">Verble ability</p>
+        <p class="language">Interview Preparation</p>
+    </div>
+
+    <div class="footer-Contact-Us">
+        <h3>Contact Us</h3>
+        <div class="footer-location-container">
+            <img src="./icon/location.svg" alt="location" class="footer-icon">
+            <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                Shewalewadi(Hadapsar), Pune - 412307</p>
+        </div>
+
+        <div class="footer-location-container">
+            <img src="./icon/phone..svg" alt="location" class="footer-icon">
+            <p class="footer-location">+91-8767202017</p>
+        </div>
+
+        <div class="footer-location-container">
+            <img src="./icon/email.svg" alt="location" class="footer-icon">
+            <p class="footer-location">nalineebodke1007@gmail.com</p>
+        </div>
+    </div>
+    </div>
+
+  <script>
+   
+  // Theme Toggle
+  document.getElementById("themeToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀" : "🌙";
+  });
+
+
+
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
 </body>
 </html>
+                    
+            
