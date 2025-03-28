@@ -19,6 +19,20 @@ font-size:70px;
 color: #0C0950;
 }
 
+.hbutton
+{
+    font-size:26px;
+margin-top:5px;
+display: inline-block;
+padding:7px;
+margin: 8px;
+border-radius: 20px 10px 20px 10px;
+border:orange;
+color:white;
+background:rgb(6,201,142);
+cursor: pointer;
+
+}
 .home .content h3 span
 {
 color: #0C0950;
@@ -52,12 +66,14 @@ font-size:26px;
 margin-top:5px;
 display: inline-block;
 padding:7px;
-margin: 8px;
+margin:6px;
 border-radius: 20px 10px 20px 10px;
 border:orange;
 color:white;
 background:rgb(6,201,142);
 cursor: pointer;
+
+
 }
 .btn:hover{
 background:#f9f9f9;
@@ -138,7 +154,7 @@ line-height: 2;
   }
   h4
   {
-    color: gray;
+    color: rgb(51, 47, 47);
   }
   
   .card {
@@ -180,7 +196,7 @@ line-height: 2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 2200px;
+    margin-top: 1890px;
     margin-left: 60px;
   }
   
