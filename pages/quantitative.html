@@ -23,7 +23,7 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
 
-        h1{
+        h1 {
             font-size: 35px;
             color: rgb(243, 149, 7);
         }
@@ -111,11 +111,11 @@
     </div>
     <!--Navbar End-->
 
-    <h1>Logical Reasoning Mock Test</h1><br>
+    <h1>Quantitative Ability Mock Test</h1><br>
 
-    <!--Coding Decoding-->
+    <!--Number System-->
     <div class="container">
-        <h2>Coding-Decoding</h2>
+        <h2>Number System</h2>
         <div id="coding_decoding_quiz-container">
             <p id="coding-decoding-question" class="question"></p>
             <div id="coding-decoding-options" class="options"></div>
@@ -127,9 +127,9 @@
 
     <br><br>
 
-    <!--Odd One Out-->
+    <!--  HCF and LCM   -->
     <div class="container">
-        <h2>Odd One Out</h2>
+        <h2>HCF and LCM</h2>
         <div id="odd_quiz-container">
             <p id="odd-question" class="question"></p>
             <div id="odd-options" class="options"></div>
@@ -141,9 +141,9 @@
 
     <br><br>
 
-    <!--Distance and Direction-->
+    <!--   Simple Interest and Compound Interest  -->
     <div class="container">
-        <h2>Distance and Direction</h2>
+        <h2>Simple Interest and Compound Interest</h2>
         <div id="distance_quiz-container">
             <p id="distance-question" class="question"></p>
             <div id="distance-options" class="options"></div>
@@ -250,63 +250,63 @@
         //  Coding Decoding 
         let coding_questions = [
             {
-                question: "If APPLE is coded as ELPPA, how is TABLE coded?",
-                options: ["ELBAT", "BATLE", "BLEAT", "TABLE"],
-                answer: "ELBAT",
+                question: "What is the smallest prime number?",
+                options: ["1", "2", "3", "5"],
+                answer: "2",
                 selected: null
             },
             {
-                question: "If CAT is coded as DBU, how is DOG coded?",
-                options: ["DPI", "EPI", "DPO", "EOG"],
-                answer: "EPI",
+                question: "Which of the following is an even number?",
+                options: ["13", "17", "22", "19"],
+                answer: "22",
                 selected: null
             },
             {
-                question: "If TREE is written as UQFF, then LEAF is written as?",
-                options: ["MFBG", "MEAG", "MFBH", "MEAH"],
-                answer: "MFBG",
+                question: "What is the greatest 2-digit number?",
+                options: ["98", "99", "100", "97"],
+                answer: "99",
                 selected: null
             },
             {
-                question: "If BOOK is coded as COOP, how is LOOK coded?",
-                options: ["MOOP", "KOOL", "NOOP", "LOOP"],
-                answer: "MOOP",
+                question: "Which of these numbers is divisible by 3?",
+                options: ["14", "18", "22", "25"],
+                answer: "18",
                 selected: null
             },
             {
-                question: "If ROAD is coded as URDG, then BRIDGE is coded as?",
-                options: ["EULGJH", "ESMGHF", "ETMGJF", "EUMGJF"],
-                answer: "EUMGJF",
+                question: "What is the place value of 5 in 4527?",
+                options: ["5", "50", "500", "5000"],
+                answer: "500",
                 selected: null
             },
             {
-                question: "In a certain code, FLOWER is written as GMRXFS, how is GARDEN written?",
-                options: ["HBSFMO", "HBSEMF", "HCSFMF", "HCSFLM"],
-                answer: "HBSFMO",
+                question: "What is the smallest odd composite number?",
+                options: ["9", "15", "21", "25"],
+                answer: "9",
                 selected: null
             },
             {
-                question: "If MOBILE is written as NQDLJG, how will LAPTOP be written?",
-                options: ["MDSUPO", "MBRSQP", "MBRSPO", "MBSSPO"],
-                answer: "MBRSPO",
+                question: "What is the sum of the first five natural numbers?",
+                options: ["10", "15", "20", "25"],
+                answer: "15",
                 selected: null
             },
             {
-                question: "If HOUSE is written as IPVTF, how is WINDOW written?",
-                options: ["XJOEPX", "XJNEPX", "XJOFPX", "XJODPX"],
-                answer: "XJOEPX",
+                question: "Which is a perfect square?",
+                options: ["20", "36", "45", "50"],
+                answer: "36",
                 selected: null
             },
             {
-                question: "If COLD is coded as DPME, how is WARM coded?",
-                options: ["XBSN", "VZQN", "XASN", "VZRN"],
-                answer: "XBSN",
+                question: "What is the HCF of 12 and 18?",
+                options: ["2", "3", "6", "9"],
+                answer: "6",
                 selected: null
             },
             {
-                question: "If KING is written as LJOH, how is QUEEN written?",
-                options: ["RVFFO", "RVFFM", "RWFFO", "RVGGO"],
-                answer: "RVFFO",
+                question: "Which is not a prime number?",
+                options: ["2", "3", "5", "9"],
+                answer: "9",
                 selected: null
             }
         ];
@@ -350,66 +350,66 @@
         coding_decoding_showQuestion();
 
 
-        //  Odd One Out 
+        //  HCF and LCF
         let odd_questions = [
             {
-                question: "Find the odd one out: Apple, Mango, Carrot, Banana",
-                options: ["Apple", "Mango", "Carrot", "Banana"],
-                answer: "Carrot",
+                question: "What is the HCF of 18 and 24?",
+                options: ["6", "12", "3", "9"],
+                answer: "6",
                 selected: null
             },
             {
-                question: "Find the odd one out: Table, Chair, Pen, Sofa",
-                options: ["Table", "Chair", "Pen", "Sofa"],
-                answer: "Pen",
+                question: "What is the LCM of 5 and 10?",
+                options: ["10", "15", "20", "25"],
+                answer: "10",
                 selected: null
             },
             {
-                question: "Find the odd one out: Red, Blue, Green, Dog",
-                options: ["Red", "Blue", "Green", "Dog"],
-                answer: "Dog",
+                question: "The HCF of 16 and 28 is?",
+                options: ["2", "4", "6", "8"],
+                answer: "4",
                 selected: null
             },
             {
-                question: "Find the odd one out: Rose, Lily, Lotus, Apple",
-                options: ["Rose", "Lily", "Lotus", "Apple"],
-                answer: "Apple",
+                question: "The LCM of 8 and 12 is?",
+                options: ["24", "36", "48", "12"],
+                answer: "24",
                 selected: null
             },
             {
-                question: "Find the odd one out: Cat, Dog, Cow, Tiger",
-                options: ["Cat", "Dog", "Cow", "Tiger"],
-                answer: "Cow",
+                question: "Find the HCF of 36 and 60.",
+                options: ["6", "12", "18", "24"],
+                answer: "12",
                 selected: null
             },
             {
-                question: "Find the odd one out: Car, Bus, Train, Cycle",
-                options: ["Car", "Bus", "Train", "Cycle"],
-                answer: "Cycle",
+                question: "Find the LCM of 9 and 15.",
+                options: ["30", "45", "60", "75"],
+                answer: "45",
                 selected: null
             },
             {
-                question: "Find the odd one out: Monday, Sunday, Friday, January",
-                options: ["Monday", "Sunday", "Friday", "January"],
-                answer: "January",
+                question: "What is the HCF of 45 and 75?",
+                options: ["5", "10", "15", "25"],
+                answer: "15",
                 selected: null
             },
             {
-                question: "Find the odd one out: Oxygen, Hydrogen, Nitrogen, Plastic",
-                options: ["Oxygen", "Hydrogen", "Nitrogen", "Plastic"],
-                answer: "Plastic",
+                question: "The LCM of 7 and 14 is?",
+                options: ["14", "21", "28", "35"],
+                answer: "14",
                 selected: null
             },
             {
-                question: "Find the odd one out: Cricket, Football, Hockey, Reading",
-                options: ["Cricket", "Football", "Hockey", "Reading"],
-                answer: "Reading",
+                question: "The HCF of 63 and 105 is?",
+                options: ["9", "7", "21", "35"],
+                answer: "21",
                 selected: null
             },
             {
-                question: "Find the odd one out: Square, Rectangle, Circle, Triangle",
-                options: ["Square", "Rectangle", "Circle", "Triangle"],
-                answer: "Circle",
+                question: "The LCM of 11 and 22 is?",
+                options: ["11", "22", "33", "44"],
+                answer: "22",
                 selected: null
             }
         ];
@@ -453,68 +453,68 @@
         odd_showQuestion();
 
 
-        // Distance and Direction 
+        // Simple Interest and Compound Interest
         let distance_questions = [
-            {
-                question: "Ravi walks 10 km North, then turns right and walks 5 km, then turns right and walks 10 km. How far is he from the starting point?",
-                options: ["5 km", "10 km", "15 km", "20 km"],
-                answer: "5 km",
-                selected: null
-            },
-            {
-                question: "A person walks 20 km East, then turns North and walks 10 km, then turns West and walks 5 km. How far is he from the starting point?",
-                options: ["15 km", "25 km", "10 km", "20 km"],
-                answer: "15 km",
-                selected: null
-            },
-            {
-                question: "Manish starts walking towards the South and walks 15 km, then he turns to his right and walks 10 km. In which direction is he now facing?",
-                options: ["West", "North", "East", "South"],
-                answer: "West",
-                selected: null
-            },
-            {
-                question: "A man walks 8 km North, then turns East and walks 6 km, then turns South and walks 8 km. How far is he from the starting point?",
-                options: ["6 km", "8 km", "10 km", "14 km"],
-                answer: "6 km",
-                selected: null
-            },
-            {
-                question: "If South-East becomes North, North-East becomes West and so on, what will West become?",
-                options: ["South-East", "South-West", "North-East", "North-West"],
-                answer: "South-East",
-                selected: null
-            },
-            {
-                question: "A person starts walking towards the East and walks 30 m, then turns left and walks 40 m. Then turns left and walks 30 m. How far is he from the starting point?",
-                options: ["20 m", "30 m", "40 m", "50 m"],
-                answer: "40 m",
-                selected: null
-            },
-            {
-                question: "Ravi is facing North. He turns 90 degrees clockwise, then again turns 90 degrees clockwise. In which direction is he facing now?",
-                options: ["South", "West", "East", "North"],
-                answer: "South",
-                selected: null
-            },
-            {
-                question: "A man walks 12 km towards the North, then 5 km to the East, then 12 km to the South. How far is he from the starting point?",
-                options: ["5 km", "10 km", "15 km", "20 km"],
-                answer: "5 km",
-                selected: null
-            },
-            {
-                question: "Rina walks 7 km East, then turns North and walks 5 km. How far is she from the starting point?",
-                options: ["8.6 km", "9 km", "11 km", "12 km"],
-                answer: "8.6 km",
-                selected: null
-            },
-            {
-                question: "If you are facing East, and you turn 270 degrees clockwise, what direction will you be facing?",
-                options: ["North", "South", "West", "East"],
-                answer: "North",
-                selected: null
-            }
+        {
+        question: "What is the Simple Interest on ₹5000 for 2 years at 5% per annum?",
+        options: ["₹250", "₹400", "₹500", "₹600"],
+        answer: "₹500",
+        selected: null
+    },
+    {
+        question: "Find the Compound Interest on ₹2000 for 2 years at 5% per annum.",
+        options: ["₹200", "₹205", "₹210", "₹220"],
+        answer: "₹205",
+        selected: null
+    },
+    {
+        question: "What is the amount after 3 years on ₹1000 at 10% p.a Simple Interest?",
+        options: ["₹1200", "₹1300", "₹1400", "₹1500"],
+        answer: "₹1300",
+        selected: null
+    },
+    {
+        question: "The Simple Interest on ₹4000 for 3 years at 6% per annum is?",
+        options: ["₹640", "₹700", "₹720", "₹750"],
+        answer: "₹720",
+        selected: null
+    },
+    {
+        question: "Find the Compound Interest on ₹5000 at 8% per annum for 1 year.",
+        options: ["₹350", "₹400", "₹450", "₹500"],
+        answer: "₹400",
+        selected: null
+    },
+    {
+        question: "What is the Simple Interest on ₹8000 for 4 years at 7% per annum?",
+        options: ["₹2100", "₹2240", "₹2300", "₹2400"],
+        answer: "₹2240",
+        selected: null
+    },
+    {
+        question: "The Compound Interest on ₹1000 for 2 years at 10% p.a is?",
+        options: ["₹200", "₹210", "₹220", "₹230"],
+        answer: "₹210",
+        selected: null
+    },
+    {
+        question: "Find the amount on ₹3000 after 2 years at 5% p.a Simple Interest.",
+        options: ["₹3200", "₹3300", "₹3400", "₹3500"],
+        answer: "₹3300",
+        selected: null
+    },
+    {
+        question: "What is the Compound Interest on ₹6000 at 5% per annum for 2 years?",
+        options: ["₹610", "₹615", "₹620", "₹630"],
+        answer: "₹615",
+        selected: null
+    },
+    {
+        question: "The Simple Interest on ₹2500 for 5 years at 4% per annum is?",
+        options: ["₹500", "₹400", "₹450", "₹480"],
+        answer: "₹500",
+        selected: null
+    }
         ];
 
         let k = 0, distance_score = 0;
