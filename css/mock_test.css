@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(243, 149, 7);
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgb(123, 123, 233);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.options button:hover {
+    background: rgb(54, 54, 131);
+}
+
+.selected {
+    background: rgb(54, 54, 131) !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: rgb(6, 201, 142);
+    color: white;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: rgb(14, 165, 127);
+}
+
+/* Media Query For Small Device */
+@media (max-width: 450px) {
+
+    .container {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 15px;
+    }
+
+    .options button {
+        padding: 6px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        margin: 5px;
+        width: 100px;
+    }
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+body.dark-mode .options button {
+    background: #333;
+    color: #fff;
+}
+
+body.dark-mode .options button:hover,
+body.dark-mode .selected {
+    background: #555 !important;
+}
+
+body.dark-mode .btn {
+    background: #0bb189;
+}
+
+body.dark-mode .btn:hover {
+    background: #099d77;
+}

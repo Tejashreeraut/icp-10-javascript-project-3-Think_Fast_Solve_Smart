@@ -7,102 +7,7 @@
     <title>Logical Reasoning Mock Test</title>
     <link rel="stylesheet" href="./../css/navbar.css" />
     <link rel="stylesheet" href="./../css/footer.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            width: 50%;
-            margin: auto;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        }
-
-        h1 {
-            font-size: 35px;
-            color: rgb(243, 149, 7);
-        }
-
-        h2 {
-            font-size: 28px;
-        }
-
-        .question {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .options button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            background: rgb(123, 123, 233);
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .options button:hover {
-            background: rgb(54, 54, 131);
-        }
-
-        .selected {
-            background: rgb(54, 54, 131) !important;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            background: rgb(6, 201, 142);
-            color: white;
-            width: 150px;
-            border: none;
-            cursor: pointer;
-            margin: 10px;
-            border-radius: 10px;
-        }
-
-        .btn:hover {
-            background: rgb(14, 165, 127);
-        }
-
-        /* Media Query For Small Device */
-        @media (max-width: 450px) {
-
-            .container {
-                width: 70%;
-            }
-
-            h1 {
-                font-size: 23px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            .question {
-                font-size: 15px;
-            }
-
-            .options button {
-                padding: 6px;
-            }
-
-            .btn {
-                padding: 8px 15px;
-                margin: 5px;
-                width: 100px;
-            }
-
-        }
-    </style>
+   <link rel="stylesheet" href="./../css/mock_test.css"/>
 </head>
 
 <body>
@@ -135,7 +40,8 @@
             <input class="input-search" placeholder="search..." />
         </div>
 
-        <div id="themeToggle" class="themeToggle">🌙</div>
+        <div id="themeToggle" style="font-size:25px; cursor:pointer;">🌙</div>
+
 
         <div class="hamburger-menu">
             <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
@@ -586,6 +492,16 @@
         }
 
         distance_showQuestion();
+
+
+
+        const themeToggle = document.getElementById("themeToggle");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+
 
     </script>
 </body>
