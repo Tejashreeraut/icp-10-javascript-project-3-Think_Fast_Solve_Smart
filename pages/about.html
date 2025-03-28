@@ -7,131 +7,239 @@
     <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-
-    <nav>
-    <h1>LearnHub</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
-    </ul>
-    <button id="themeToggle">🌙</button>
-</nav>
-
-<section class="about">
-    <h2>About LearnHub</h2>
-    <p>LearnHub is an innovative online learning platform designed to empower students, professionals, and lifelong learners with high-quality educational content.</p>
-
-    <h3>🌟 Our Mission</h3>
-    <p>To provide accessible, engaging, and practical learning experiences for everyone, anywhere.</p>
-
-    <h3>📚 What We Offer</h3>
-    <ul>
-        <li>High-quality online courses</li>
-        <li>Live classes and webinars</li>
-        <li>Expert instructors</li>
-        <li>Certificates upon completion</li>
-        <li>Affordable learning plans</li>
-    </ul>
-
-    <div class="stats">
-        <div class="stat-box">
-            <h2 id="coursesCount">0</h2>
-            <p>Courses Available</p>
+    <div class="navbar">
+        <div class="brand">
+            <img src="./../icon/virtual-class.png" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">LearnHub</h2>
         </div>
-        <div class="stat-box">
-            <h2 id="studentsCount">0</h2>
-            <p>Students Enrolled</p>
+        <div class="menu">
+            <a href="../index.html" class="menu-item">Home</a>
+            <a href="../pages/about.html" class="menu-item">About Us</a>
+            <a href="../pages/courses.html" class="menu-item">Courses</a>
+            <a href="../pages/mock_test.html" class="menu-item">Mock Test</a>
+            <a href="../pages/contact.html" class="menu-item">Contact</a>
+            <a href="../pages/login.html" class="menu-item">Login</a>
         </div>
-        <div class="stat-box">
-            <h2 id="instructorsCount">0</h2>
-            <p>Expert Instructors</p>
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
+        </div>
+        <div id="themeToggle" class="themeToggle">🌙</div>
+    </div>
+
+    <div class="top_content">
+        <h1 id="head">About Us</h1>
+
+        <p id="welcome">Welcome to LearnHub</p>
+
+        <p id="para">LearnHub is an innovative online learning platform designed to empower students,
+             professionals, and lifelong learners with high-quality educational content.
+             We believe in making education accessible and affordable for everyone, regardless of their background or location.
+             With industry-leading instructors and interactive learning modules, LearnHub ensures a rich learning experience.
+             Join thousands of learners who are upgrading their skills and advancing their careers with LearnHub.
+            </p>
+    </div>
+
+    <div class="content">
+        <img src="../image/about-whoare.jpg" alt="img" id="team-img">
+        <div class="who">
+            <b>Who We Are</b>
+            <p>At LearnHub, we are passionate about helping students, job seekers, 
+                and professionals master aptitude skills through high-quality courses and mock tests.
+                 Our platform is designed to make aptitude learning simple, engaging, and effective, 
+                 empowering individuals to excel in competitive exams, job interviews, and academic assessments.</p>
+            <!-- <button id="btn-learn">Learn More</button> -->
         </div>
     </div>
-</section>
 
-<footer>
-    <div class="footer-container-1">
-      <div class="footer-section">
-        <h2>About Us</h2>
-        <p>We are dedicated to providing the best AI and blockchain solutions to our clients.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+    <div class="ourmission">
+        <div class="mission-content">
+            <b>Our Vision</b>
+            <p>At LearnHub, our vision is to empower learners with high-quality aptitude training that enhances their problem-solving skills, 
+                logical thinking, and career prospects.Our ultimate goal is to be the leading platform for aptitude preparation,
+                 ensuring that every learner gains confidence and success in their journey. 🚀</p>
         </div>
-      </div>
-      <div class="footer-section links">
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Quizes</a></li>
-          <li><a href="#">Certificate</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-section contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-        <p>Address: 123 Street, City, Country</p>                
-      </div>
+        <div class="miss-img">
+            <img src="../image/about-mission.jpg" alt="img" id="mission-img">
+        </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Your Company.. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="https://kit.fontawesome.com/42daa0a1cd.js" crossorigin="anonymous"></script>
-<script>
-   
-    const themeToggle = document.getElementById("themeToggle");
-    themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-    });
 
-    // Animate Stats on Scroll
-    const stats = document.querySelectorAll(".stat-box");
-    const options = { threshold: 0.5 };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+    <div class="offer">
+        <h1>what we offer</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3> High-Quality Courses</h3>
+                <p>Our high-quality courses are designed to provide a comprehensive and structured learning experience for students, 
+                    job seekers, and professionals. </p>
+            </div>
+            <div class="card">
+                <h3>Mock Tests & Practice Quizzes</h3>
+                <p>Our Mock Tests & Practice Quizzes are designed to simulate real exam conditions, helping learners improve their speed,
+                     accuracy, and confidence. </p>
+            </div>
+            <div class="card">
+                <h3>Certificates & Recognition</h3>
+                <p> Upon successful course completion, learners receive industry-recognized certificates that showcase their
+                    expertise in Quantitative Aptitude, Logical Reasoning, and Verbal Ability.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-quote">
+        <div class="card-quote">
+            <h3 class="h3-quote">💡 Quote of the Day</h3>
+            <p id="quote">Loading...</p>
+        </div>
+    
+        <div class="card-quote">
+            <h3 class="h3-quote" >📢 Testimonials</h3>
+            <p id="testimonial">"LearnHub changed my learning experience!"</p>
+        </div>
+    </section>
+
+     <!--Footer-->
+  <div class="footer-container">
+    <div class="footer-sub-container">
+        <div class="RTC">
+            <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
+            <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
+        </div>
+        <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+            and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+            students.</P>
+
+        <div class="footer-logo-container">
+            <div class="footer-sub-logo-container">
+                <a href="https://peerlist.io/ganeshgore">
+                    <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://www.linkedin.com/in/mr-ganesh-gore">
+                    <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://github.com/ganeshgore1811">
+                    <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://www.youtube.com/">
+                    <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://twitter.com/username">
+                    <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+
+            <div class="footer-sub-logo-container">
+                <a href="https://www.instagram.com/ganeshgore_18">
+                    <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-Quick-links">
+        <h3 class="footer-heading">Quick Links</h3>
+        <a href="./../index.html" class="footer-courses">Home</a><br><br>
+        <a href="./about.html" class="footer-courses">About Us</a><br><br>
+        <a href="./courses.html" class="footer-courses">Courses</a><br><br>
+        <a href="./contact.html" class="footer-courses">Contact</a><br><br>
+    </div>
+
+    <div class="footer-Learn">
+        <h3>Courses</h3>
+        <p class="language">Quantitative Aptitude</p>
+        <p class="language">Logical Ability</p>
+        <p class="language">Verble ability</p>
+        <p class="language">Interview Preparation</p>
+    </div>
+
+    <div class="footer-Contact-Us">
+        <h3>Contact Us</h3>
+        <div class="footer-location-container">
+            <img src="./../icon/location.svg" alt="location" class="footer-icon">
+            <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                Shewalewadi(Hadapsar), Pune - 412307</p>
+        </div>
+
+        <div class="footer-location-container">
+            <img src="./../icon/phone..svg" alt="location" class="footer-icon">
+            <p class="footer-location"><a href="tel:+91-8767202017">+91-8767202017</a></p>
+        </div>
+
+        <div class="footer-location-container">
+            <img src="./../icon/email.svg" alt="location" class="footer-icon">
+            <p class="footer-location"><a href="mailto:nalineebodke1007@gmail.com">nalineebodke1007@gmail.com</a></p>
+        </div>
+
+
+    </div>
+</div>
+
+    <script>
+        // Theme Toggle
+        document.getElementById("themeToggle").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
         });
-    }, options);
 
-    stats.forEach(stat => observer.observe(stat));
+        // Dynamic Number Counter
+        function animateCounter(element, target, speed) {
+            let count = 0;
+            let interval = setInterval(() => {
+                count += Math.ceil(target / speed);
+                if (count >= target) {
+                    count = target;
+                    clearInterval(interval);
+                }
+                element.textContent = count;
+            }, 30);
+        }
 
-    // Dynamic Number Counter
-    function animateCounter(element, target, speed) {
-        let count = 0;
-        let increment = target / speed;
-        let interval = setInterval(() => {
-            count += increment;
-            if (count >= target) {
-                count = target;
-                clearInterval(interval);
-            }
-            element.textContent = Math.floor(count);
-        }, 30);
-    }
+        // Array of Quotes
+        const quotes = [
+            "The beautiful thing about learning is that no one can take it away from you.",
+            "Success is not the key to happiness. Happiness is the key to success.",
+            "Education is the most powerful weapon you can use to change the world.",
+            "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            "An investment in knowledge pays the best interest."
+        ];
 
-    // Start counting when the page loads
-    window.onload = function () {
+        document.getElementById("quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+
+        // Rotating Testimonials
+        const testimonials = [
+            "LearnHub changed my learning experience!",
+            "Excellent platform with amazing instructors!",
+            "I got my dream job thanks to LearnHub!",
+            "The courses are well-structured and easy to follow!"
+        ];
+        
+        let index = 0;
+        setInterval(() => {
+            document.getElementById("testimonial").textContent = testimonials[index];
+            index = (index + 1) % testimonials.length;
+        }, 5000);
+
+        // Ask user for feedback
         setTimeout(() => {
-            animateCounter(document.getElementById("coursesCount"), 120, 50);
-            animateCounter(document.getElementById("studentsCount"), 5000, 60);
-            animateCounter(document.getElementById("instructorsCount"), 45, 50);
-        }, 500);
-    };
-</script>
-
+            let feedback = confirm("Do you like LearnHub? Click OK to give us a 5-star rating!");
+            if (feedback) {
+                alert("Thank you for your support! 😊");
+            } else {
+                alert("We'll work harder to improve your experience! 🙌");
+            }
+        }, 10000);
+    </script>
 </body>
 </html>
