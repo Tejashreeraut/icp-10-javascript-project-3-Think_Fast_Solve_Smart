@@ -5,17 +5,45 @@
     <link rel="stylesheet" href="../css/courses.css">
 </head>
 <body>
-    
+   
     <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#About">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#Login">Login</a>
-    </div>
+        <div class="brand">
+            <img src="./../icon/virtual-class.png" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">LearnHub</h2>
+        </div>
 
-    <h1>💻✈️Apptitude Course Available ✈️</h1>
+        <div class="menu">
+            <a class="menu-item" href="./../index.html">Home</a>
+            <a class="menu-item" href="about.html">About Us</a>
+            <a class="menu-item" href="courses.html">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test</a>
+                <div class="dropdown-content">
+                    <a href="quantitative.html">Quantitative Aptitude</a>
+                    <a href="logical.html">Logical Ability</a>
+                    <a href="verbal.html">Verbal Ability</a>
+                    <a href="certificate.html">Certificate</a>
+                </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            <a class="menu-item" href="login.html">Login</a>
+        </div>
 
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
+        </div>
+
+        <div id="themeToggle" class="themeToggle">🌙</div>
+
+        <div class="hamburger-menu">
+            <img src="./../icon/menu.png" alt="hamburger-menu" class="hamburger-menu-img">
+        </div>
+    </div>
+    
+
+<link rel="stylesheet" href="./../css/navbar.css" />
+    <link rel="stylesheet" href="./../css/footer.css" />
+   
     <div class="container">
         <div class="item" onclick="showInfo('VERBAL ABILITY', 'English language skills, including reading comprehension, grammar, and vocabulary.')">
             <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240729112821/Top-Verbal-Ability-Aptitude-Topics-for-Placements-copy.webp">
@@ -46,6 +74,91 @@
             alert(city + ": " + info);
         }
     </script>
+    <div class="footer-container">
+        <div class="footer-sub-container">
+            <div class="RTC">
+                <img src="./../icon/home-page-icons.png" alt="logo" class="footer-logo">
+                <h3 class="footer-heading">Think Fast Solve Smart !!</h3><br>
+            </div>
+            <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+                and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+                students.</P>
 
+            <div class="footer-logo-container">
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.linkedin.com/in/nalinee-bodke-632134294/">
+                        <img src="./../icon/linkedin-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+                <div class="footer-sub-logo-container">
+                    <a href="https://github.com/nalineebodke10">
+                        <img src="./../icon/github-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="https://www.youtube.com/">
+                        <img src="./../icon/youtube-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/twitter-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+                <div class="footer-sub-logo-container">
+                    <a href="#">
+                        <img src="./../icon/instagram-logo.webp" alt="logo" class="footer-sub-logo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-Quick-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <a href="./../index.html" class="footer-courses">Home</a><br><br>
+            <a href="./about.html" class="footer-courses">About Us</a><br><br>
+            <a href="./courses.html" class="footer-courses">Courses</a><br><br>
+            <a href="./contact.html" class="footer-courses">Contact</a><br><br>
+        </div>
+
+        <div class="footer-Learn">
+            <h3>Courses</h3>
+            <p class="language">Quantitative Aptitude</p>
+            <p class="language">Logical Ability</p>
+            <p class="language">Verble ability</p>
+
+            <p class="language">Interview Preparation</p>
+        </div>
+
+        <div class="footer-Contact-Us">
+            <h3>Contact Us</h3>
+            <div class="footer-location-container">
+                <img src="./../icon/location.svg" alt="location" class="footer-icon">
+                <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                    Shewalewadi(Hadapsar), Pune - 412307</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/phone..svg" alt="location" class="footer-icon">
+                <p class="footer-location">+91-8767202017</p>
+            </div>
+
+            <div class="footer-location-container">
+                <img src="./../icon/email.svg" alt="location" class="footer-icon">
+                <p class="footer-location">nalineebodke1007@gmail.com</p>
+            </div>
+
+
+        </div>
+     </div>
 </body>
 </html>

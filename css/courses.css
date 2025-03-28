@@ -2,7 +2,7 @@
 
         .body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #534ed2;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -11,7 +11,7 @@
 
         .navbar {
             width: 100%;
-            background-color: #333;
+            background-color:rgb(227, 226, 240);
             overflow: hidden;
             display: flex;
             justify-content: space-around;
@@ -23,7 +23,7 @@
         }
 
         .navbar a {
-            color: white;
+            color: rgb(84, 26, 232);
             text-decoration: none;
             padding: 14px 20px;
             font-size: 18px;
@@ -36,7 +36,7 @@
 
         h1 {
             font-size: 32px;
-            color: #333;
+            color: #603fd8;
             margin-top: 80px;
             text-align: center;
         }
