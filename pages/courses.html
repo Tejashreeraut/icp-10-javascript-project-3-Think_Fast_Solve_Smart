@@ -2,139 +2,24 @@
 <html>
 <head>
     <title>doc</title>
-    <style>
-       * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f4f6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        h1 {
-            font-size: 32px;
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .container {
-            height: auto;
-            width: 100%;
-            max-width: 1300px;
-            background-color: rgb(179, 97, 139);
-            padding: 30px;
-            border-radius: 15px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .item {
-            height: 600px;
-            width: 350px;
-            background-color: rgb(213, 226, 233);
-            padding: 15px;
-            font-size: 18px;
-            text-align: center;
-            border-radius: 15px;
-            border: solid 2px white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            transition: all 0.3s ease;
-        }
-
-        .item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .item img {
-            height: 200px;
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .item p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #333;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        button a {
-            color: white;
-            text-decoration: none;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-
-        video {
-            margin-top: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 1200px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .item {
-                width: 80%;
-                max-width: 350px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .item {
-                width: 90%;
-                max-width: 300px;
-            }
-
-            video {
-                width: 100%;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/courses.css">
 </head>
 <body>
+    
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#About">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#Login">Login</a>
+    </div>
 
     <h1>💻✈️Apptitude Course Available ✈️</h1>
 
     <div class="container">
         <div class="item" onclick="showInfo('VERBAL ABILITY', 'English language skills, including reading comprehension, grammar, and vocabulary.')">
             <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240729112821/Top-Verbal-Ability-Aptitude-Topics-for-Placements-copy.webp">
-            <p>🟢 Verbal Ability...</p>
+            <h1> Verbal Ability...</h1>
             <p>✈️ Learn to verbal ability test Development and Become internship Ready in just 1 month, minimum seats available ✈️</p>
             <p>🗓️ Starting from 2nd April 2025</p>
             <p>⏱️ 8:00PM-9:00PM</p>
@@ -144,7 +29,7 @@
 
         <div class="item" onclick="showInfo('Quantitative Aptitude', 'Quantitative Aptitude is used to measure Aptitude tests, assess cognitive abilities and problem-solving skills, often including questions on numerical reasoning, verbal reasoning, logical reasoning, abstract reasoning, and spatial reasoning.')">
             <img src="https://play-lh.googleusercontent.com/8HEJdrLd48HwrAzlRva8xjG1wxCuu0VUd9ML6ySw76q-lBD0AeWofbNZqYPrjWSCgf8">
-            <p>🔴 Quantitative Aptitude.</p>
+            <h2> Quantitative Aptitude.</h2>
             <p>✈️Fractions, Decimals, and Percentages: Operations and conversions involving these types of numbers.✈️</p>
             <p>🟠 Logical Reasoning questions...</p>
             <p>🟠 Abstract Reasoning...</p>
